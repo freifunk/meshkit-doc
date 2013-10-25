@@ -14,7 +14,6 @@ Contents:
   about
   get/integration-into-networks.rst
   generate
-  flash
   firstlogin
   usage/index
   advanced

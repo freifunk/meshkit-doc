@@ -16,8 +16,12 @@ Contribute
 To contribute you must first install some depencies, on Debian this can be done
 with the following commands:
 
-    aptitude install python-sphinx python-pygments
+    aptitude install python-pygments
+    easy_install -U Sphinx
     easy_install sphinxjp.themes.basicstrap
+
+Note: use easy_install instead of the packages from the Debian repo because at least
+in wheezy the python-sphinx package had some bugs, e.g. didn't create the sidebar.
 
 After that clone this repository and change into the meshkit-doc directory. All source files
 can be edited in the source/ folder. After you are done editing:
