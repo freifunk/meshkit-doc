@@ -1,7 +1,7 @@
 Meshkit Dokumentation
 =====================
 
-This is intended to be a user oriented dokumentation for the [Meshkit Firmware](http://meshkit.freifunk.net "Meshkit Freifunk Firmware Generator).
+This is intended to be a user oriented dokumentation for the [Meshkit Firmware](http://meshkit.freifunk.net "Meshkit Freifunk Firmware Generator").
 It is in german language only at this point.
 
 The documentation is not complete yet (not even nearly) and WIP. If you can help
