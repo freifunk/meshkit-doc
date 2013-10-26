@@ -1,12 +1,15 @@
-.. Meshkit documentation master file, created by
-   sphinx-quickstart on Sat May 18 21:15:06 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to Meshkit's documentation!
-***********************************
+.. _Dokumentation zu Meshkit:
 
-Contents:
+Dokumentation zu Meshkit
+========================
+
+.. only:: html
+
+    Eine Druckversion dieser Seite ist als :download:`PDF-Dokument
+    <../build/latex/Meshkit.pdf>` verfügbar.
+
+    Inhalt:
 
 .. toctree::
   :maxdepth: 2
@@ -19,11 +22,4 @@ Contents:
   advanced
   help-with-documentation
 
-
-Indices and tables
-******************
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
