@@ -9,6 +9,8 @@ gerne gesehen.
 Allgemeine Regeln zur Dokumentation
 -----------------------------------
 
+* Dieses Handbuch wird unter der Creative Commons `by-nc-sa`_ Lizenz veröffentlicht.
+  Deine Beiträge werden ebenfalls unter dieser Lizenz freigegeben.
 * Texte sinnvoll durch Überschriften gliedern
 * Bilder: Nur JPG oder PNG verwenden
 * Wo möglich verweise auf andere Stellen in der Dokumentation

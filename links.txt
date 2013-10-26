@@ -4,3 +4,4 @@
 .. _Meshkit: http://meshkit.freifunk.net
 .. _Sphinx: http://sphinx-doc.org
 .. _Putty: http://www.chiark.greenend.org.uk/~sgtatham/putty/
+.. _by-nc-sa: http://creativecommons.org/licenses/by-nc-sa/3.0/
