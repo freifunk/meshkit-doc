@@ -1,5 +1,5 @@
 Dienste ankündigen mit dem Nameservice Plugin
-*********************************************
+=============================================
 
 Um eigene Dienste im gesamten Mesh bekannt zu machen kann das OLSR-Nameservice
 Plugin verwendet werden. Dieses sendet in regelmässigen Abständen Informationen
@@ -12,13 +12,13 @@ Ist der Service unter einer DNS-Adresse bekannt, dann kann statt einer IP auch
 diese Adresse in der URL des Dienstes verwendet werden.
 
 Einrichtung
-===========
+-----------
 
 Ziel: Es soll ein Webserver auf dem lokalen Knoten mit der IP
 10.11.12.13 angekündigt werden. Der Webserver läuft auf Port 80.
 
 Einrichtung über LuCI
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 \1. Um zu den Einstellungen für das Nameservice Plugin zu kommen: Gehe zu *Dienste -> OLSR -> Plugins*
 
@@ -43,9 +43,9 @@ Einrichtung über LuCI
 
 
 Einrichtung mithilfe der Konsole
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-::
+.. code-block:: sh
 
   uci add_list olsrd.olsrd_nameservice.service="http://10.11.0.8:80|tcp|Mein Router"
   uci commit olsrd
@@ -53,7 +53,7 @@ Einrichtung mithilfe der Konsole
 
 Es können auch mehrere Dienste angekündigt werden:
 
-::
+.. code-block:: sh
 
   uci add_list olsrd.olsrd_nameservice.service="http://10.11.0.8:80|tcp|Mein Router"
   uci add_list olsrd.olsrd_nameservice.service="ftp://10.11.0.8:21|tcp|Mein FTP Server"
@@ -61,14 +61,15 @@ Es können auch mehrere Dienste angekündigt werden:
   /etc/init.d/olsrd restart
 
 
-Erklärung des Service Strings
------------------------------
+.. rubric:: Erklärung des Service Strings
+
 
 Der Aufbau des erwarteten Strings als Option für Service ist recht einfach:
 
 <url>:<port>|<Protokoll (tcp oder udp)>|<Beschreibung des Dienstes>
 
 **Port darf nicht weggeleassen werden!**
+
 
 Ergebnis
 --------
@@ -79,3 +80,5 @@ die eben eingerichtete Ankündigung für "Mein Router".
 
 .. image:: ../images/nameservice/nameservice-services-table.jpg
    :alt: Anzeige der Services im Mesh
+
+

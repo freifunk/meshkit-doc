@@ -4,21 +4,21 @@ Eigene Webseiten
 Lokal auf dem Node
 ------------------
 
-Auf dem Freifunkrouter läuft ohnehin schon ein kleiner Webserver (uhttpd), 
-der verwendet werden kann um neben dem LuCI Webinterface auch eigene Inhalte 
-per HTTP zugänglich zu machen.
+Auf dem Freifunkrouter läuft ohnehin schon ein kleiner Webserver (``uhttpd``),
+der verwendet werden kann um neben dem LuCI Webinterface auch eigene Inhalte per
+HTTP zugänglich zu machen.
 
 Seiten direkt über uhttpd ausliefern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Es gibt die Möglichkeit direkt auf dem Node kleinere Seiten 
-abzulegen, indem man sie im Ordner /www unterbringt. Dies erfordert keine
-Änderung an der Konfiguration des Nodes.
 
-Einfache statische Seite
-""""""""""""""""""""""""
+Es gibt die Möglichkeit direkt auf dem Node kleinere Seiten abzulegen, indem man
+sie im Ordner /www unterbringt. Dies erfordert keine Änderung an der
+Konfiguration des Nodes.
 
-Beispiel:
 
+.. rubric:: Einfache statische Seite
+
+*Beispiel:*
 
 .. code-block:: html
 
@@ -28,16 +28,16 @@ Beispiel:
     </body>
   </html>
 
-als */www/hallowelt.html* abspeichern und danach im Browser unter
-http://<nodeip>/hallowelt.html aufrufen.
+Den obigen Code als ``/www/hallowelt.html`` abspeichern und danach im Browser
+unter der Adresse ``http://<nodeip>/hallowelt.html`` aufrufen.
 
-CGI-Scripte
-"""""""""""
 
-Möchte man CGI-Scripte ausführen, dann muss man diese in */www/cgi-bin*
+.. rubric:: CGI-Scripte
+
+Möchte man CGI-Scripte ausführen, dann muss man diese in ``/www/cgi-bin``
 ablegen und ausführbar machen. 
 
-Beispiel:
+*Beispiel:*
 
 .. code-block:: bash
 
@@ -58,14 +58,15 @@ Beispiel:
   </html>
   '
 
-als */www/cgi-bin/helloworld.cgi* speichern und ausführbar machen mit:
+Den obigen Code als ``/www/cgi-bin/helloworld.cgi`` speichern und ausführbar
+machen mit:
 
-::
+.. code-block:: bash
 
   chmod +x /www/cgi-bin/helloworld.cgi
 
-Dieses Testscript kann nun im Browser unter http://<nodeip>/cgi-bin/helloworld.cgi
-abgerufen werden.
+Dieses Testscript kann nun im Browser unter
+``http://<nodeip>/cgi-bin/helloworld.cgi`` abgerufen werden.
 
 Das selbe Script in Lua:
 
@@ -94,9 +95,9 @@ Verzeichnisinhalte
 In der Standardkonfiguration zeigt uhttpd auch Verzeichnisinhalte von
 Verzeichnissen an, die keine index-Datei enthalten.
 
-Beispiel:
+*Beispiel:*
 
-::
+.. code-block:: bash
 
   mkdir /www/verzeichnis
   echo "hallo" > /www/verzeichnis/hallo.txt
@@ -105,6 +106,7 @@ Beispiel:
 folgende Ausgabe:
 
 .. image:: ../images/directory-listing.jpg
+
 
 Auf einem seperaten PC/Server
 -----------------------------
