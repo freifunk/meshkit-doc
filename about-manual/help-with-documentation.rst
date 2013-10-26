@@ -1,4 +1,4 @@
-.. include:: links.txt
+.. include:: /links.txt
 
 Hilf mit bei der Dokumentation
 ==============================
@@ -48,5 +48,6 @@ oder alternativ mit
 .. code-block:: bash
 
   pip install sphinxjp.themes.basicstrap
+
 
 

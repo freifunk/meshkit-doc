@@ -20,6 +20,6 @@ Dokumentation zu Meshkit
   firstlogin
   usage/index
   advanced
-  help-with-documentation
+  about-manual/index.rst
 
 
