@@ -1,4 +1,6 @@
-.. include ../links.txt
+.. include:: /links.txt
+
+.. _net-setup:
 
 Einbinden des Freifunkrouters ins eigene Netzwerk
 =================================================
