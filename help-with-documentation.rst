@@ -14,6 +14,13 @@ Allgemeine Regeln zur Dokumentation
 * Wo möglich verweise auf andere Stellen in der Dokumentation
 * Erkläre möglichst gut und dabei so kurz wie möglich
 
+Quellcode dieser Dokumentation
+------------------------------
+
+Der Quellcode diese Dokumentation befindet sich auf Github:
+`Meshkit Dokumentation <http://www.github.com/freifunk/meshkit-doc>`_.
+
+
 ..  Benutzung von Sphinx
 ..  --------------------
 

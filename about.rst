@@ -1,3 +1,5 @@
+.. include:: /links.txt
+
 Allgemeine Infos zur Meshkit Freifunk Firmware
 ==============================================
 
