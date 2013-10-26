@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Firmware mit Meshkit generieren lassen &mdash; Meshkit 0.0.2 Dokumentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+<link rel="stylesheet" href="_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '0.0.2',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+<script type="text/javascript" src="_static/translations.js"></script>
+<script type="text/javascript" src="_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+</script>
+    <link rel="author" title="Über diese Dokumentation" href="about.html" />
+    <link rel="top" title="Meshkit 0.0.2 Dokumentation" href="index.html" />
+    <link rel="next" title="Erster Login" href="firstlogin.html" />
+    <link rel="prev" title="Einbinden des Freifunkrouters ins eigene Netzwerk" href="get/integration-into-networks.html" /> 
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Meshkit 0.0.2 Dokumentation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="genindex.html" title="Allgemeiner Index" accesskey="I">Index</a>
+                </li>
+                <li>
+                <a href="firstlogin.html" title="Erster Login" accesskey="N">weiter</a>
+                </li>
+                <li>
+                <a href="get/integration-into-networks.html" title="Einbinden des Freifunkrouters ins eigene Netzwerk" accesskey="P">zurück</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span3 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Firmware mit Meshkit generieren lassen</a><ul>
+<li><a class="reference internal" href="#wichtige-infos-zum-router-sammeln">Wichtige Infos zum Router sammeln</a></li>
+<li><a class="reference internal" href="#ip-adresse-n-registrieren">IP-Adresse(n) registrieren</a></li>
+<li><a class="reference internal" href="#firmware-generieren">Firmware generieren</a><ul>
+<li><a class="reference internal" href="#grundlegende-systemeinstellungen">Grundlegende Systemeinstellungen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="get/integration-into-networks.html"
+                        title="vorheriges Kapitel">Einbinden des Freifunkrouters ins eigene Netzwerk</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="firstlogin.html"
+                        title="nächstes Kapitel">Erster Login</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/generate.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Schnellsuche</h3>
+  <form class="search form-search" action="search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Los" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+         
+<div class="span3 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Firmware mit Meshkit generieren lassen</a><ul>
+<li><a class="reference internal" href="#wichtige-infos-zum-router-sammeln">Wichtige Infos zum Router sammeln</a></li>
+<li><a class="reference internal" href="#ip-adresse-n-registrieren">IP-Adresse(n) registrieren</a></li>
+<li><a class="reference internal" href="#firmware-generieren">Firmware generieren</a><ul>
+<li><a class="reference internal" href="#grundlegende-systemeinstellungen">Grundlegende Systemeinstellungen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="get/integration-into-networks.html"
+                        title="vorheriges Kapitel">Einbinden des Freifunkrouters ins eigene Netzwerk</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="firstlogin.html"
+                        title="nächstes Kapitel">Erster Login</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/generate.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Schnellsuche</h3>
+  <form class="search form-search" action="search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Los" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="span9">
+          <div class="document">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="firmware-mit-meshkit-generieren-lassen">
+<h1>Firmware mit Meshkit generieren lassen<a class="headerlink" href="#firmware-mit-meshkit-generieren-lassen" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="wichtige-infos-zum-router-sammeln">
+<span id="infos-zum-router-sammeln"></span><h2>Wichtige Infos zum Router sammeln<a class="headerlink" href="#wichtige-infos-zum-router-sammeln" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Um eine passende Firmware für das eigene Routermodell zu generieren muss man
+zunächst einige Daten zum Router kennen:</p>
+<ul class="simple">
+<li>Chipsatz</li>
+<li>Chipsatz des/der WLAN-Interfaces</li>
+<li>Größe des RAM</li>
+<li>Größe des Flash-Speichers</li>
+</ul>
+<p>Diese Daten finden man in der <a class="reference external" href="http://wiki.openwrt.org/toh/start">Table of Hardware</a> im OpenWrt Wiki. Zu den
+meisten Routermodellen gibt es auch eine Detailseite mit weiteren Infos. Diese
+Seite sollte man ebenfalls zumindest kurz überfliegen. Hier finden sich
+im Allgemeinen auch Infos zum Flashen und zur Rettung des Routers falls beim
+Flashen etwas so richtig schief ging.</p>
+<p>Beispiel:</p>
+<p>Wir wollen die Daten für einen TP-Link WR1043ND zusammentragen. In der
+<a class="reference external" href="http://wiki.openwrt.org/toh/start">Table of Hardware</a> sehen wir folgendes:</p>
+<img alt="_images/toh-wr1043nd.jpg" src="_images/toh-wr1043nd.jpg" />
+<p>Daraus können wir entnehmen:</p>
+<ul class="simple">
+<li>Der Chipsatz gehört zur AR71XX Familie</li>
+<li>WLAN benutzt Atheros Hardware</li>
+<li>Der RAM ist 32 MB groß</li>
+<li>Flash ist 8 MB groß</li>
+</ul>
+</div>
+<div class="section" id="ip-adresse-n-registrieren">
+<h2>IP-Adresse(n) registrieren<a class="headerlink" href="#ip-adresse-n-registrieren" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Nun muss noch mindestens eine IP-Adresse aus dem Freifunknetz für den Router
+registriert werden. Hier hat jede Community ihre eigenen Seiten zur Registrierung,
+im Allgemeinen kann man sich hier jedoch selbst bedienen und einfach eine noch
+nicht vergebene Adresse für seinen Knoten reservieren.</p>
+<p>Registrierungsseiten in den einzelnen Communities:</p>
+<ul class="simple">
+<li><strong>Augsburg:</strong> Als Benutzer auf <a class="reference external" href="http://augsburg.freifunk.net">http://augsburg.freifunk.net</a> einloggen und &#8220;Node registrieren&#8221;</li>
+</ul>
+</div>
+<div class="section" id="firmware-generieren">
+<h2>Firmware generieren<a class="headerlink" href="#firmware-generieren" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Das Erstellen von Firmwareimages erfolgt in drei Schritten:</p>
+<div class="section" id="grundlegende-systemeinstellungen">
+<h3>Grundlegende Systemeinstellungen<a class="headerlink" href="#grundlegende-systemeinstellungen" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Öffne die <a class="reference external" href="http://meshkit.freifunk.net">Meshkit</a> Webseite im Browser. Du siehst nun folgendes:</p>
+<img alt="_images/basic-settings.jpg" src="_images/basic-settings.jpg" />
+<p><em>Erklärung:</em></p>
+<ol class="arabic">
+<li><p class="first">Login bzw. Registrieren</p>
+<blockquote>
+<div><p>Hier kann man einen User für Meshkit registrieren. Dadurch wird es möglich,
+einige Datenfelder beim Generieren neuer Images bereits auszufüllen, z.B.
+Community, Adresse oder SSH Public Keys. Es ist nicht notwendig einen Benutzer
+im Meshkit zu registrieren. Wer aber öfter Images generiert dem kann
+die Registrierung ersparen, bei einigen Feldern immer und immer wieder die
+selben Daten einzugeben.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Geräte Vorauswahl</p>
+<blockquote>
+<div><p>Im unteren Bereich von Meshkit befinden sich einige Links zu Geräten, die
+häufig verwendet werden. Klickt man auf einen dieser links, dann wählt Meshkit
+automatisch das richtige Target (und in Schritt 2 auch das passende Profil) für
+dieses Gerät. Wenn ein Gerät nicht in dieser Liste steht dann heisst das nicht,
+dass es nicht unterstützt wird, sondern nur, dass man Target und im nächsten
+Schritt Profil manuell auswählen muss.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Einstellungen</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first last">Option</p>
+</th>
+<th class="head"><p class="first last">Beschreibung</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first last">Community</p>
+</td>
+<td><p class="first last">Wähle deine Community aus. (TODO: Was tun wenn es noch keine gibt?)</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p class="first last">Target</p>
+</td>
+<td><p class="first last">Wähle ein passendes Target (siehe <a class="reference internal" href="#infos-zum-router-sammeln">Infos zum Router sammeln</a>)</p>
+</td>
+</tr>
+<tr class="row-even"><td><p class="first last">Expertenmodus</p>
+</td>
+<td><p class="first last">Wenn ausgewählt, dann werden im nächsten Schritt wesentlich mehr Optionen
+zur Konfiguration des Routers angezeigt.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p class="first last">Keine Konfiguration</p>
+</td>
+<td><p class="first last">Erstellt ein Image, es wird aber keine Konfiguration durchgeführt. Dies
+ist vor allem nützlich um Images zu erhalten, die für sysupgrade (TODO:
+Seite zu sysupgrade anlegen) verwendet werden können.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p class="first last">Email</p>
+</td>
+<td><p class="first last">Wenn angegeben wird nachdem das Image gebaut wurde eine Mail an diese
+Adresse geschickt.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p class="first">Absenden</p>
+<blockquote>
+<div><p>Nachdem alle Einstellungen getätigt wurde klicke auf <strong>Absenden</strong> um zu
+Schritt 2 des Meshkits zu gelangen, wo weitere Einstellungen vorgenommen
+werden müssen.</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar ">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="genindex.html" title="Allgemeiner Index" >Index</a></li>
+        <li><a href="firstlogin.html" title="Erster Login" >weiter</a></li>
+        <li><a href="get/integration-into-networks.html" title="Einbinden des Freifunkrouters ins eigene Netzwerk" >zurück</a></li>
+        <li><a href="index.html">Meshkit 0.0.2 Dokumentation</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer>
+          &copy; Copyright 2013, Manuel Munz.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

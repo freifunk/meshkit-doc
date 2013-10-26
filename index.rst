@@ -7,7 +7,7 @@ Dokumentation zu Meshkit
 .. only:: html
 
     Eine Druckversion dieser Seite ist als :download:`PDF-Dokument
-    <../build/latex/Meshkit.pdf>` verfügbar.
+    <_build/latex/Meshkit.pdf>` verfügbar.
 
     Inhalt:
 

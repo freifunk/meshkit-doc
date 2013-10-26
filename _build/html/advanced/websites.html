@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Eigene Webseiten &mdash; Meshkit 0.0.2 Dokumentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.0.2',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="../_static/translations.js"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+</script>
+    <link rel="author" title="Über diese Dokumentation" href="../about.html" />
+    <link rel="top" title="Meshkit 0.0.2 Dokumentation" href="../index.html" />
+    <link rel="up" title="Eigene Dienste anbieten" href="offer-services.html" />
+    <link rel="next" title="Dienste ankündigen mit dem Nameservice Plugin" href="nameservice.html" />
+    <link rel="prev" title="Eigene Dienste anbieten" href="offer-services.html" /> 
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">Meshkit 0.0.2 Dokumentation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="../genindex.html" title="Allgemeiner Index" accesskey="I">Index</a>
+                </li>
+                <li>
+                <a href="nameservice.html" title="Dienste ankündigen mit dem Nameservice Plugin" accesskey="N">weiter</a>
+                </li>
+                <li>
+                <a href="offer-services.html" title="Eigene Dienste anbieten" accesskey="P">zurück</a>
+                </li>
+                <li>
+                <a href="../advanced.html" >Fortgeschrittene Konfiguration</a>
+                </li>
+                <li>
+                <a href="offer-services.html" accesskey="U">Eigene Dienste anbieten</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span3 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone">
+  <h3><a href="../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Eigene Webseiten</a><ul>
+<li><a class="reference internal" href="#lokal-auf-dem-node">Lokal auf dem Node</a><ul>
+<li><a class="reference internal" href="#seiten-direkt-uber-uhttpd-ausliefern">Seiten direkt über uhttpd ausliefern</a></li>
+<li><a class="reference internal" href="#verzeichnisinhalte">Verzeichnisinhalte</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#auf-einem-seperaten-pc-server">Auf einem seperaten PC/Server</a><ul>
+<li><a class="reference internal" href="#portforwarding">Portforwarding</a></li>
+<li><a class="reference internal" href="#hna">HNA</a></li>
+<li><a class="reference internal" href="#server-direkt-ins-olsr-netz">Server direkt ins OLSR Netz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="offer-services.html"
+                        title="vorheriges Kapitel">Eigene Dienste anbieten</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="nameservice.html"
+                        title="nächstes Kapitel">Dienste ankündigen mit dem Nameservice Plugin</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/advanced/websites.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Schnellsuche</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Los" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+         
+<div class="span3 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone">
+  <h3><a href="../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Eigene Webseiten</a><ul>
+<li><a class="reference internal" href="#lokal-auf-dem-node">Lokal auf dem Node</a><ul>
+<li><a class="reference internal" href="#seiten-direkt-uber-uhttpd-ausliefern">Seiten direkt über uhttpd ausliefern</a></li>
+<li><a class="reference internal" href="#verzeichnisinhalte">Verzeichnisinhalte</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#auf-einem-seperaten-pc-server">Auf einem seperaten PC/Server</a><ul>
+<li><a class="reference internal" href="#portforwarding">Portforwarding</a></li>
+<li><a class="reference internal" href="#hna">HNA</a></li>
+<li><a class="reference internal" href="#server-direkt-ins-olsr-netz">Server direkt ins OLSR Netz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="offer-services.html"
+                        title="vorheriges Kapitel">Eigene Dienste anbieten</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="nameservice.html"
+                        title="nächstes Kapitel">Dienste ankündigen mit dem Nameservice Plugin</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/advanced/websites.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Schnellsuche</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Los" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="span9">
+          <div class="document">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="eigene-webseiten">
+<h1>Eigene Webseiten<a class="headerlink" href="#eigene-webseiten" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="lokal-auf-dem-node">
+<h2>Lokal auf dem Node<a class="headerlink" href="#lokal-auf-dem-node" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Auf dem Freifunkrouter läuft ohnehin schon ein kleiner Webserver (<tt class="docutils literal"><span class="pre">uhttpd</span></tt>),
+der verwendet werden kann um neben dem LuCI Webinterface auch eigene Inhalte per
+HTTP zugänglich zu machen.</p>
+<div class="section" id="seiten-direkt-uber-uhttpd-ausliefern">
+<h3>Seiten direkt über uhttpd ausliefern<a class="headerlink" href="#seiten-direkt-uber-uhttpd-ausliefern" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Es gibt die Möglichkeit direkt auf dem Node kleinere Seiten abzulegen, indem man
+sie im Ordner /www unterbringt. Dies erfordert keine Änderung an der
+Konfiguration des Nodes.</p>
+<p class="rubric">Einfache statische Seite</p>
+<p><em>Beispiel:</em></p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    Hallo Welt!
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>Den obigen Code als <tt class="docutils literal"><span class="pre">/www/hallowelt.html</span></tt> abspeichern und danach im Browser
+unter der Adresse <tt class="docutils literal"><span class="pre">http://&lt;nodeip&gt;/hallowelt.html</span></tt> aufrufen.</p>
+<p class="rubric">CGI-Scripte</p>
+<p>Möchte man CGI-Scripte ausführen, dann muss man diese in <tt class="docutils literal"><span class="pre">/www/cgi-bin</span></tt>
+ablegen und ausführbar machen.</p>
+<p><em>Beispiel:</em></p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/sh</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;Content-type: text/html&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+
+<span class="nb">echo</span> <span class="s1">&#39;</span>
+<span class="s1">&lt;html&gt;</span>
+<span class="s1">  &lt;head&gt;</span>
+<span class="s1">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span>
+<span class="s1">    &lt;title&gt;Hallo Welt&lt;/title&gt;</span>
+<span class="s1">  &lt;/head&gt;</span>
+<span class="s1">  &lt;body&gt;</span>
+<span class="s1">    Hallo Welt!</span>
+<span class="s1">  &lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;</span>
+<span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>Den obigen Code als <tt class="docutils literal"><span class="pre">/www/cgi-bin/helloworld.cgi</span></tt> speichern und ausführbar
+machen mit:</p>
+<div class="highlight-bash"><div class="highlight"><pre>chmod +x /www/cgi-bin/helloworld.cgi
+</pre></div>
+</div>
+<p>Dieses Testscript kann nun im Browser unter
+<tt class="docutils literal"><span class="pre">http://&lt;nodeip&gt;/cgi-bin/helloworld.cgi</span></tt> abgerufen werden.</p>
+<p>Das selbe Script in Lua:</p>
+<div class="highlight-lua"><div class="highlight"><pre><span class="cp">#!/usr/bin/lua</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">Content-type: text/html&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s">[[</span>
+<span class="s">&lt;html&gt;</span>
+<span class="s">  &lt;head&gt;</span>
+<span class="s">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span>
+<span class="s">    &lt;title&gt;Hello World&lt;/title&gt;</span>
+<span class="s">  &lt;/head&gt;</span>
+<span class="s">  &lt;body&gt;</span>
+<span class="s">    Hallo Welt!</span>
+<span class="s">  &lt;/body&gt;</span>
+<span class="s">&lt;/html&gt;</span>
+<span class="s">]]</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="verzeichnisinhalte">
+<h3>Verzeichnisinhalte<a class="headerlink" href="#verzeichnisinhalte" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>In der Standardkonfiguration zeigt uhttpd auch Verzeichnisinhalte von
+Verzeichnissen an, die keine index-Datei enthalten.</p>
+<p><em>Beispiel:</em></p>
+<div class="highlight-bash"><div class="highlight"><pre>mkdir /www/verzeichnis
+<span class="nb">echo</span> <span class="s2">&quot;hallo&quot;</span> &gt; /www/verzeichnis/hallo.txt
+</pre></div>
+</div>
+<p>Öffnet man im Browser jetzt <a class="reference external" href="http:/">http:/</a>/&lt;nodeip&gt;/verzeichnis, dann erhält man
+folgende Ausgabe:</p>
+<img alt="../_images/directory-listing.jpg" src="../_images/directory-listing.jpg" />
+</div>
+</div>
+<div class="section" id="auf-einem-seperaten-pc-server">
+<h2>Auf einem seperaten PC/Server<a class="headerlink" href="#auf-einem-seperaten-pc-server" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Soll die Webseite von einem anderen PC bzw. Server ausgeliefert werden,
+der per Netzwerk mit dem Node verbunden ist gibt es mehrere Möglichkeiten,
+diese Inhalte im Freifunknetz verfügbar zu machen.</p>
+<div class="section" id="portforwarding">
+<h3>Portforwarding<a class="headerlink" href="#portforwarding" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Auf dem Node wird ein Portforwarding eingerichtet, das einkommende Pakete
+an den Webserver im eigenen Netzwerk weiterleitet. Siehe: Portforwarding (TODO)</p>
+</div>
+<div class="section" id="hna">
+<h3>HNA<a class="headerlink" href="#hna" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Mit HNA (Host Network Announcement) kann auf dem Node ein verfügbarer
+IP-Bereich oder auch nur eine einzelne Adresse im Netzwerk bekannt gemacht
+werden. So ist der Webserver direkt im Mesh erreichbar, muss jedoch selbst
+nich OLSR nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)</p>
+</div>
+<div class="section" id="server-direkt-ins-olsr-netz">
+<h3>Server direkt ins OLSR Netz<a class="headerlink" href="#server-direkt-ins-olsr-netz" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Indem der Server selbst OLSR &#8220;spricht&#8221; kann er direkt aus dem Mesh erreichbar
+sein. Siehe: OLSR im eigenen Netz (TODO)</p>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar ">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="../genindex.html" title="Allgemeiner Index" >Index</a></li>
+        <li><a href="nameservice.html" title="Dienste ankündigen mit dem Nameservice Plugin" >weiter</a></li>
+        <li><a href="offer-services.html" title="Eigene Dienste anbieten" >zurück</a></li>
+        <li><a href="../index.html">Meshkit 0.0.2 Dokumentation</a></li>
+        <li><a href="../advanced.html" >Fortgeschrittene Konfiguration</a></li>
+        <li><a href="offer-services.html" >Eigene Dienste anbieten</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer>
+          &copy; Copyright 2013, Manuel Munz.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Allgemeine Infos zur Meshkit Freifunk Firmware}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Was ist Meshkit?}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Features}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2}Einbinden des Freifunkrouters ins eigene Netzwerk}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}LAN-Setup}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}WAN-Setup}{3}{section.2.2}
+\contentsline {chapter}{\numberline {3}Firmware mit Meshkit generieren lassen}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Wichtige Infos zum Router sammeln}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}IP-Adresse(n) registrieren}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Firmware generieren}{6}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Grundlegende Systemeinstellungen}{6}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Erster Login}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Benutzerhandbuch}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Mit dem Router verbinden}{11}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Netzwerkverbindung herstellen}{11}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Passwort \IeC {\"a}ndern}{11}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Im Webinterface}{11}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Mit SSH}{11}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Fortgeschrittene Konfiguration}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Eigene Dienste anbieten}{13}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Eigene Webseiten}{13}{subsection.6.1.1}
+\contentsline {subsubsection}{Lokal auf dem Node}{13}{subsubsection*.3}
+\contentsline {paragraph}{Seiten direkt \IeC {\"u}ber uhttpd ausliefern}{13}{paragraph*.4}
+\contentsline {paragraph}{Einfache statische Seite}{13}{paragraph*.5}
+\contentsline {paragraph}{CGI-Scripte}{14}{paragraph*.6}
+\contentsline {paragraph}{Verzeichnisinhalte}{15}{paragraph*.7}
+\contentsline {subsubsection}{Auf einem seperaten PC/Server}{15}{subsubsection*.8}
+\contentsline {paragraph}{Portforwarding}{15}{paragraph*.9}
+\contentsline {paragraph}{HNA}{15}{paragraph*.10}
+\contentsline {paragraph}{Server direkt ins OLSR Netz}{16}{paragraph*.11}
+\contentsline {subsection}{\numberline {6.1.2}Dienste ank\IeC {\"u}ndigen mit dem Nameservice Plugin}{16}{subsection.6.1.2}
+\contentsline {subsubsection}{Einrichtung}{16}{subsubsection*.12}
+\contentsline {paragraph}{Einrichtung \IeC {\"u}ber LuCI}{16}{paragraph*.13}
+\contentsline {paragraph}{Einrichtung mithilfe der Konsole}{18}{paragraph*.14}
+\contentsline {paragraph}{Erkl\IeC {\"a}rung des Service Strings}{18}{paragraph*.15}
+\contentsline {subsubsection}{Ergebnis}{18}{subsubsection*.16}
+\contentsline {chapter}{\numberline {7}Hilf mit bei der Dokumentation}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Allgemeine Regeln zur Dokumentation}{19}{section.7.1}
+\contentsline {section}{\numberline {7.2}Installation von Sphinx}{19}{section.7.2}
