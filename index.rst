@@ -16,8 +16,8 @@ Dokumentation zu Meshkit
 
   about
   get/integration-into-networks.rst
-  generate
-  firstlogin
+  generate/index.rst
+  flash/index.rst
   usage/index
   advanced
   about-manual/index.rst
