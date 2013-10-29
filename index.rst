@@ -20,6 +20,7 @@ Dokumentation zu Meshkit
   flash/index.rst
   usage/index
   advanced
+  communities/index.rst
   about-manual/index.rst
 
 
