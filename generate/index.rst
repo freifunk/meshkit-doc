@@ -1,6 +1,7 @@
-
 .. include:: /links.txt
-.. _Image generieren
+
+.. _image-generieren:
+
 
 Firmwareimage mit Meshkit generieren
 ************************************
@@ -14,5 +15,6 @@ Inhalt:
   :maxdepth: 2
 
   prepare.rst
+  quickstart.rst
   generate.rst
 
