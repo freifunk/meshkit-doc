@@ -32,3 +32,12 @@ Diese Dokumentation ist ebenfalls auf Github verfügbar:
 
 Für Meshkit und die Meshkit Dokumentation gibt es ebenfalls auf Github einen
 Bugtracker ("Issues").
+
+Von Meshkit benutzte Software
+-----------------------------
+
+* Die Meshkit Weboberfläche baut auf `web2py <http://web2py.com/>`_ auf
+* Die Firmware basiert auf einem möglichst wenig angepassten `OpenWrt`_
+* Als Weboberfläche wird `LuCI`_ verwendet
+* Als Routingprotokoll kommt `OLSRd`_ zum Einsatz
+
