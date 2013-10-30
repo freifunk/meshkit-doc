@@ -7,3 +7,5 @@ Benutzerhandbuch
   connect-router
   change-password
   freifunk-basic-settings
+  freifunk-contact
+  firewall

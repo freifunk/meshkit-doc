@@ -119,7 +119,10 @@ Portforwarding
 ^^^^^^^^^^^^^^
 
 Auf dem Node wird ein Portforwarding eingerichtet, das einkommende Pakete
-an den Webserver im eigenen Netzwerk weiterleitet. Siehe: Portforwarding (TODO)
+an den Webserver im eigenen Netzwerk weiterleitet. Siehe:
+:ref:`firewall-port-forward`
+
+Als ``Externe Zone`` ist in diesem Fall ``Freifunk`` zu wählen.
 
 HNA
 ^^^

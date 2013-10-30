@@ -124,5 +124,32 @@ was dann so aussieht:
 
 :guilabel:`Irgendwas in der GUI`
 
+Dateipfade
+----------
+
+Pfade zu Dateien und Verzeichnissen werden durch das Label \:file:
+kenntlich gemacht, z.B.
+
+.. code-block:: rst
+
+   :file:`/etc/passwd`
+
+was dann so aussieht:
+
+:file:`/etc/passwd`
+
+Kommandos
+---------
+
+Kommandos auf der Shell sollten durch das Label \:command:
+kenntlich gemacht werden, z.B.
+
+.. code-block:: rst
+
+   :command:`/etc/init.d/olsrd restart`
+
+was dann so aussieht:
+
+:command:`/etc/init.d/olsrd restart`
 
 

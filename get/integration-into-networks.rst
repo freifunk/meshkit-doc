@@ -49,6 +49,9 @@ Genaueres dazu findest du in der `Table of Hardware`_ im OpenWrt Wiki.
      - Für die Verbindung zum Freifunknetz
      - individuell
 
+Für die einzelnen Zonen gelten spezifische **Firewallregeln**, die bestimmen, ob
+Verkehr der den Router über diese Zonen erreicht akzeptiert (und evtl. weitergeleitet)
+ode verworfen wird, siehe dazu: :ref:`firewall-zones`.
 
 .. _net-setup-standard:
 
