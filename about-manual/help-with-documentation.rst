@@ -15,6 +15,7 @@ Allgemeine Regeln zur Dokumentation
 * Bilder: Nur JPG oder PNG verwenden
 * Wo möglich verweise auf andere Stellen in der Dokumentation
 * Erkläre möglichst gut und dabei so kurz wie möglich
+* komplette Screenshots sollten 1024px breit sein
 
 Quellcode dieser Dokumentation
 ------------------------------
@@ -153,3 +154,8 @@ was dann so aussieht:
 :command:`/etc/init.d/olsrd restart`
 
 
+Weiterführende Links zu Sphinx und rst
+======================================
+
+* `Sphinx Dokumentation <http://sphinx-doc.org/contents.html>`_
+* `Sphinx Doku bei grund-wissen.de <http://www.grund-wissen.de/linux-und-opensource/tools/sphinx/index.html>`_
