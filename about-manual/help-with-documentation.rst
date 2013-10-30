@@ -29,7 +29,7 @@ Der Quellcode diese Dokumentation befindet sich auf Github:
 Zur Erstellung der Dokumentation wird `Sphinx`_ genutzt.
 
 Installation von Sphinx
------------------------
+=======================
 
 Viele Linux Distributionen bieten Sphinx als Paket an, unter Debian kann es
 installiert werden mit:
@@ -52,4 +52,61 @@ oder alternativ mit
   pip install sphinxjp.themes.basicstrap
 
 
+Formatierung mit rst
+====================
 
+Überschriften
+-------------
+
+Überschriften sollen Texte logisch Gliedern. Mehr als 4 Ebenen sind
+in der Regel nicht sinnvoll.
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Level
+     - Unterstreichen mit
+   * - 1 (Kapitelüberschriften)
+     - \=
+   * - 2
+     - \=
+   * - 3
+     - \-
+   * - 4
+     - \^
+
+
+Codebeispiele
+-------------
+
+Codeblöcke immer kennzeichnen mit
+
+.. code-block:: rst
+
+  .. code-block:: sh
+     while true; do
+       ping -n 3 google.de
+     done
+
+was dann so aussieht:
+
+.. code-block:: sh
+
+   while true; do
+     ping -n 3 google.de
+   done
+
+Menüpfade zu Seiten in der GUI
+------------------------------
+
+Es gibt speziell für GUI-Pfade ein Label. Dieses sollte für alle
+Menüpfade verwendet werden, z.B.
+
+.. code-block:: rst
+
+   :menuselection:`Administration --> System --> Administration`
+
+Das sieht dann so aus:
+
+:menuselection:`Administration --> System --> Administration`

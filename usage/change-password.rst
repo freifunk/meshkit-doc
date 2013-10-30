@@ -1,19 +1,28 @@
 Passwort ändern
 ===============
 
-Setzt voraus: Mit dem Router verbinden
+Setzt voraus: :ref:`connect`
 
 Im Webinterface
 ---------------
 
-Das Passwort kann unter ``Administration -> System -> Administrator`` geändert
-werden.
+Das Passwort kann unter :menuselection:`Administration --> System --> Administration`
+geändert werden.
+
+.. image:: /images/luci/change-password.jpg
 
 Mit SSH
 -------
 
-.. code-block:: bash
+Auf dem Shell des Routers :command:`passwd` eingeben. Dann das neue Passwort 
+eingeben und noch einmal bestätigen.
 
-  passwd
+.. code-block:: sh
 
-und zwei mal ein neues Passwort eingeben.
+   root@freifunk:~# passwd
+   Changing password for root
+   New password: 
+   Retype password: 
+   Password for root changed by root
+   root@freifunk:~#
+
