@@ -1,7 +1,10 @@
-.. Some Links that are used in various places
+.. Some Links that are used in various places. Keep in alphabetical order.
 
-.. _Table of Hardware: http://wiki.openwrt.org/toh/start
-.. _Meshkit: http://meshkit.freifunk.net
-.. _Sphinx: http://sphinx-doc.org
-.. _Putty: http://www.chiark.greenend.org.uk/~sgtatham/putty/
 .. _by-nc-sa: http://creativecommons.org/licenses/by-nc-sa/3.0/
+.. _LuCI: http://luci.subsignal.org
+.. _Meshkit: http://meshkit.freifunk.net
+.. _OLSRd: http://www.olsr.org
+.. _OpenWrt: http://www.openwrt.org
+.. _Putty: http://www.chiark.greenend.org.uk/~sgtatham/putty/
+.. _Sphinx: http://sphinx-doc.org
+.. _Table of Hardware: http://wiki.openwrt.org/toh/start
