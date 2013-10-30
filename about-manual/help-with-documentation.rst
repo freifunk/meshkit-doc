@@ -110,3 +110,19 @@ Menüpfade verwendet werden, z.B.
 Das sieht dann so aus:
 
 :menuselection:`Administration --> System --> Administration`
+
+Verweise auf andere Elemente in der GUI
+---------------------------------------
+
+Auch hierfür gibt es ein Label:
+
+.. code-block:: rst
+
+   :guilabel:`Irgendwas in der GUI`
+
+was dann so aussieht:
+
+:guilabel:`Irgendwas in der GUI`
+
+
+
