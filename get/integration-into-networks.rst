@@ -113,3 +113,32 @@ bereits vorhandenes Gerät ersetzen.
    dich und es ist wahrscheinlich sinnvoller, nach :ref:`net-setup-standard`
    vorzugehen.
 
+
+.. container:: clearer
+
+   .. no content here, this is just to clear the float from previous image
+
+.. _net-setup-ffonly:
+
+
+Freifunk Router ohne eigenen Internetzugang
+-------------------------------------------
+
+.. image:: /images/net-setup-ffonly.png
+   :alt: Freifunkrouter ohne eigenen Internetzugang
+   :width: 40%
+   :align: right
+
+Ein Freifunkrouter lässt sich auch ohne Anschluss an einen Internetzugang
+bzw. ans eigene Heimnetz betreiben. Eigene Rechner sind in diesem Fall an
+den LAN-Schnittstellen des Freifunkrouters angeschlossen. Voraussetzung ist,
+dass über Funk eine Verbindung zum restlichen Teil des Freifunknetzwerks
+möglich ist, sich also mindestens ein Nachbar in Funkreichweite befindet. Ist
+dies der Fall, dann wird über diese Funkverbindung Kontakt zum Freifunknetzwerk
+hergestellt. Damit ist dann in der Regel auch der Zugriff aufs Internet vom
+Router selbst und angeschlossenen Rechnern möglich.
+
+* Auf Rechner im LAN kann von Freifunk aus nicht direkt zugegriffen werden. Will man Dienste
+  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren (TODO: Link zur Anleitung)
+* Rechner die am LAN angeschlossen sind können andere Adressen im Freifunknetzwerk
+  direkt erreichen
