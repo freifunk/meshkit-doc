@@ -8,4 +8,6 @@ Benutzerhandbuch
   change-password
   freifunk-basic-settings
   freifunk-contact
+  install-packages
   firewall
+  scp
