@@ -14,6 +14,8 @@ werden.
    Bevor die Meshkit Firmware generiert werden kann ist es wichtig im voraus zu
    wissen, wie der Freifunk Router ins eigene Netzwerk integriert werden soll.
 
+.. _net-zones:
+
 LAN, WAN und Freifunk - Die einzelnen Zonen im Router
 -----------------------------------------------------
 
