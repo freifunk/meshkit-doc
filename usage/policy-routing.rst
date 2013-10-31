@@ -44,7 +44,7 @@ Das Bild verdeutlicht dies:
    .. no content here, this is just to clear the float from previous image
 
 Konfiguration von Policy Routing
-================================
+--------------------------------
 
 .. warning::
 
@@ -53,7 +53,7 @@ Konfiguration von Policy Routing
    weisst was du tust.
 
 Mit Luci
---------
+^^^^^^^^
 
 Policy Routing kann in LuCI unter
 :menuselection:`Administration --> Freifunk --> Policy Routing`
@@ -72,7 +72,7 @@ siehe :ref:`packages`.
    auch noch ``lan`` aus.
 
 Auf der Shell
--------------
+^^^^^^^^^^^^^
 
 Die Konfiguration für das policy Routing befindet sich in
 :file:`/etc/config/freifunk-policyrouting` und kann entweder direkt
@@ -139,7 +139,7 @@ neu gestartet werden, damit diese Konfiguration aktiv wird.
    zones="freifunk lan".
 
 Infos zu Routingtabellen und zum Debuggen
-=========================================
+-----------------------------------------
 
 Zum Anzeigen und Verändern der Routingtabellen und -regeln wird
 :command:`ip` verwendet. Wichtige Kommandos von ip sind in diesem
@@ -256,7 +256,7 @@ gewählt dann würde als nächstes die Tabelle ``main`` befragt und dort die eig
 Defaultroute des knotens gefunden und benutzt.
 
 Links
-=====
+-----
 
 * `Policy Routing im Freifunk Wiki <http://wiki.freifunk.net/Kamikaze/freifunk-policyrouting>`_
 * `Quellcode von freifunk-policyrouting <http://luci.subsignal.org/trac/browser/luci/trunk/contrib/package/freifunk-policyrouting>`_
