@@ -130,7 +130,7 @@ HNA
 Mit HNA (Host Network Announcement) kann auf dem Node ein verfügbarer
 IP-Bereich oder auch nur eine einzelne Adresse im Netzwerk bekannt gemacht
 werden. So ist der Webserver direkt im Mesh erreichbar, muss jedoch selbst
-nich OLSR nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)
+nicht OLSR nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)
 
 Server direkt ins OLSR Netz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

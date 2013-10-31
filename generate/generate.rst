@@ -392,6 +392,9 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
      - Netzwerk aus 6.0.0.0/8. Dieses Netzwerk (/24) wird automatisch aus der
        IPv4-Adresse dieses Interfaces generiert.
 
+
+.. _generate-expert-wan:
+
 WAN
 ^^^
 

@@ -28,7 +28,7 @@ Standardsetup: Router mit WAN-Schnittstelle am eigenen LAN
    Zugriffe über die WAN-Schnittstelle des Routers werden normalerweise
    von der Firewall verboten und müssen explizit erlaubt werden. Am einfachsten
    geht das indem man im Meshkit im WAN-Tab ``Zugriff über SSH erlauben`` und
-   ``Zugriff über Web erlauben`` auswählt. (TODO: verlinken)
+   ``Zugriff über Web erlauben`` auswählt. Siehe: :ref:`generate-expert-wan`.
 
 Bezieht der Freifunkrouter seine IP automatisch per DHCP vom eigenen Router,
 was die Standardeinstellung ist, dann muss zunächst herausgefunden werden, welche

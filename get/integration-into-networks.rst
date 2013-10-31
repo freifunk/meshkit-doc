@@ -25,7 +25,7 @@ LAN, WAN und Freifunk - Die einzelnen Zonen im Router
 Bevor einzelne Integrationsvarianten besprochen werden ist es wichtig zu verstehen,
 dass der Freifunk Router in der Standardkonfiguration drei Netzwerke kennt. Jedes
 dieser drei Netzwerke erfüllt unterschiedliche Aufgaben und es gelten unterschiedliche
-Regeln, vor allem im Hinblick auf die Konfiguration der Firewall (TODO: Links zur Firewallzonen).
+Regeln, vor allem im Hinblick auf die Konfiguration der Firewall.
 
 Nicht jeder Router verfügt über genug Schnittstellen um alle drei Zonen zur Verfügung zu stellen.
 Gibt es z.B. nur eine Ethernet-Buchse am Router dann wird durch OpenWrt vorgegeben, welchem
@@ -71,13 +71,13 @@ verbunden.
 * Beide beziehen in der Regel automatisch eine IP-Adresse vom eigenen Router (DHCP)
 * Der eigene Router dient als Internetgateway
 * Ob auch Freifunknutzer den eigenen Internetzugang benutzen dürfen kann im Meshkit
-  mit der Option ``Internet freigeben`` (TODO: verlinken) konfiguriert werden.
+  mit der Option ``Internet freigeben`` (siehe :ref:`generate-expert-wan`) konfiguriert werden.
 * Auf Rechner im LAN kann von Freifunk aus nicht direkt zugegriffen werden. Will man Dienste
   auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren (TODO: Link zur Anleitung)
-* Um vom LAN aus auf den Freifunk Router zugreifen zu können, muss die Firewall dort
+* Um vom WAN aus auf den Freifunk Router zugreifen zu können, muss die Firewall dort
   konfiguriert werden. Das kann man sich einfach machen indem man beim meshkit im ``WAN`` Tab
-  Häckchen bei ``Erlaube SSH`` und ``Erlaube Web`` setzt (TODO: verlinken)
-* Will man vom LAN aus auf das Freifunknetz zugreifen können, dann müssen entweder
+  Häckchen bei ``Erlaube SSH`` und ``Erlaube Web`` setzt (siehe :ref:`generate-expert-wan`)
+* Will man vom eigenen LAN aus auf das Freifunknetz zugreifen können, dann müssen entweder
   auf dem eigenen Rechner oder besser auf dem eigenen Gateway statische Routen eingetragen
   und die Firewall auf dem Freifunk Router entsprechend konfiguriert werden (TODO) werden.
 
