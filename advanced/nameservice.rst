@@ -1,7 +1,7 @@
 Dienste ankündigen mit dem Nameservice Plugin
 =============================================
 
-Um eigene Dienste im gesamten Mesh bekannt zu machen kann das OLSR-Nameservice
+Um eigene Dienste im gesamten Mesh bekannt zu machen kann das :term:`OLSR`-Nameservice
 Plugin verwendet werden. Dieses sendet in regelmässigen Abständen Informationen
 über die lokalen Dienste an alle anderen Nodes im Mesh.
 

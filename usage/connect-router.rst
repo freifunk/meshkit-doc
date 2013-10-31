@@ -30,7 +30,7 @@ Standardsetup: Router mit WAN-Schnittstelle am eigenen LAN
    geht das indem man im Meshkit im WAN-Tab ``Zugriff über SSH erlauben`` und
    ``Zugriff über Web erlauben`` auswählt. Siehe: :ref:`generate-expert-wan`.
 
-Bezieht der Freifunkrouter seine IP automatisch per DHCP vom eigenen Router,
+Bezieht der Freifunkrouter seine IP automatisch per :term:`DHCP` vom eigenen Router,
 was die Standardeinstellung ist, dann muss zunächst herausgefunden werden, welche
 IP der Freifunkrouter vom eigenen Router bekommen hat. Dein eigener Router hat
 hoffentlich ein Webinterface, das irgendwo anzeigt, welche Clients verbunden sind
@@ -50,7 +50,7 @@ Freifunk Router direkt am Internet, Client am LAN
    Siehe: :ref:`net-setup-internetgw`
 
 Ein PC, der direkt am LAN-Anschluss des Routers angeschlossen ist erhält von
-diesem automatisch per DHCP eine IP-Adresse zugewiesen.
+diesem automatisch per :term:`DHCP` eine IP-Adresse zugewiesen.
 
 Sofern die IP des LAN-Interfaces des Freifunk Routers nicht verändert wurde
 ist die IP zum Zugriff auf den Router über die LAN-Schnittstelle immer

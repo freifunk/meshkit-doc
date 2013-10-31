@@ -22,5 +22,6 @@ Dokumentation zu Meshkit
   advanced
   communities/index.rst
   about-manual/index.rst
+  glossary.rst
 
 

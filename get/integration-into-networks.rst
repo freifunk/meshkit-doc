@@ -46,7 +46,7 @@ Genaueres dazu findest du in der `Table of Hardware`_ im OpenWrt Wiki.
      - 192.168.1.1
    * - WAN
      - Wide Area Network. Damit verbindet man den Router mit dem Internet.
-     - automatisch (DHCP)
+     - automatisch (:term:`DHCP`)
    * - Freifunk
      - Für die Verbindung zum Freifunknetz
      - individuell
@@ -70,7 +70,7 @@ und damit Teil des eigenen Netzwerks. Eigene PCs sind ebenfalls mit diesem Route
 verbunden.
 
 * PC und Freifunk Router sind im selben Netzwerk (LAN)
-* Beide beziehen in der Regel automatisch eine IP-Adresse vom eigenen Router (DHCP)
+* Beide beziehen in der Regel automatisch eine IP-Adresse vom eigenen Router (:term:`DHCP`)
 * Der eigene Router dient als Internetgateway
 * Ob auch Freifunknutzer den eigenen Internetzugang benutzen dürfen kann im Meshkit
   mit der Option ``Internet freigeben`` (siehe :ref:`generate-expert-wan`) konfiguriert werden.

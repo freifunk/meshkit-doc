@@ -320,13 +320,13 @@ drei WLAN-Schnittstellen konfiguriert werden.
        genau weisst was du tust.
      - Voreinstellung aus Community Profil, siehe :ref:`community_profiles`
    * - DHCP aktivieren
-     - Per DHCP kann Gästen im WLAN automatisch eine IP Adresse zugewiesen werden.
+     - Per :term:`DHCP` kann Gästen im WLAN automatisch eine IP Adresse zugewiesen werden.
      - ja
    * - DHCP-Bereich
-     - Der IP-Bereich aus dem Adressen für DHCP vergeben werden. Liegt dieser Bereich
+     - Der IP-Bereich aus dem Adressen für :term:`DHCP` vergeben werden. Liegt dieser Bereich
        innerhalb des im Communityprofil angegebenen Meshnetzwerks
        (siehe :ref:`community_profiles`), dann wird er als
-       HNA von olsrd angekündigt. Liegt er ausserhalb, dann wird NAT aktiviert.
+       :term:`HNA` von olsrd angekündigt. Liegt er ausserhalb, dann wird NAT aktiviert.
        Wird dieses Feld leer gelassen wird automatisch ein IP-Bereich aus 6.0.0.0/8 generiert.
      - Netzwerk aus 6.0.0.0/8. Dieses Netzwerk (/24) wird automatisch aus der
        IPv4-Adresse dieses Interfaces generiert.
@@ -365,7 +365,7 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
      - Default
    * - LAN-Protokoll
      - Hier kann gewählt werden, ob die LAN Schnittstelle als
-       Schnittstelle für OLSR konfiguriert werden soll. Wird ``olsr``
+       Schnittstelle für :term:`OLSR` konfiguriert werden soll. Wird ``olsr``
        als Protokoll gewählt dann können an diese Schnittstelle
        weitere Freifunk Router per Kabel angeschlossen werden.
      - static
@@ -375,19 +375,19 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
        gewählt werden. Siehe: :ref:`IP-registrieren`
      - 192.168.1.1
    * - Netzmaske
-     - Netzmaske für das LAN-Interface. Soll dieses Netzwerk ein OLSR-Netzwerk
+     - Netzmaske für das LAN-Interface. Soll dieses Netzwerk ein :term:`OLSR`-Netzwerk
        sein, dann hat es sich als praktisch erwiesen, hier kleinere Netzmasken
        für die lokale Vernetzung von Nodes zu verwenden.
      - 255.255.255.0
    * - DHCP aktivieren
-     - Nur verfügbar wenn ``olsr`` als Protokoll gewählt wurde. Per DHCP kann Gästen
+     - Nur verfügbar wenn ``olsr`` als Protokoll gewählt wurde. Per :term:`DHCP` kann Gästen
        im Netzwerk automatisch eine IP Adresse zugewiesen werden.
      - nein
    * - DHCP-Bereich
-     - Der IP-Bereich aus dem Adressen für DHCP vergeben werden. Liegt dieser Bereich
+     - Der IP-Bereich aus dem Adressen für :term:`DHCP` vergeben werden. Liegt dieser Bereich
        innerhalb des im Communityprofil angegebenen Meshnetzwerks
        (siehe :ref:`community_profiles`), dann wird er als
-       HNA von olsrd angekündigt. Liegt er ausserhalb, dann wird NAT aktiviert.
+       :term:`HNA` von olsrd angekündigt. Liegt er ausserhalb, dann wird NAT aktiviert.
        Wird dieses Feld leer gelassen wird automatisch ein IP-Bereich aus 6.0.0.0/8 generiert.
      - Netzwerk aus 6.0.0.0/8. Dieses Netzwerk (/24) wird automatisch aus der
        IPv4-Adresse dieses Interfaces generiert.
@@ -410,7 +410,7 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
 
 Es stehen insgesamt drei Protokolle zur Auswahl:
 
-* dhcp - Automatische Konfiguration der WAN-Schnittstelle durch DHCP
+* dhcp - Automatische Konfiguration der WAN-Schnittstelle durch :term:`DHCP`
 * static - Statische konfiguration
 * olsr - Als OLSR-Schnittstelle konfigurieren (z.B. für Kabelkopplung von Nodes)
 
@@ -435,7 +435,7 @@ Es stehen insgesamt drei Protokolle zur Auswahl:
    * - Internet teilen
      - Anderen im Mesh erlauben die eigene Internetverbindung mitzunutzen. Ist diese Option aktiviert
        dann wird das olsrd dyngw_plain Plugin aktiviert. Dieses überwacht die Internetverbindung und
-       kündigt einen verfügbaren Internetzugang als HNA an sobald er erkannt wurde. **Wenn die eigene
+       kündigt einen verfügbaren Internetzugang als :term:`HNA` an sobald er erkannt wurde. **Wenn die eigene
        Internetverbindung nur über einen Tunnel freigegeben werden soll, dann diese Option nicht wählen.**
      - nein
 
@@ -472,7 +472,7 @@ Es stehen insgesamt drei Protokolle zur Auswahl:
    * - Internet teilen
      - Anderen im Mesh erlauben die eigene Internetverbindung mitzunutzen. Ist diese Option aktiviert
        dann wird das olsrd dyngw_plain Plugin aktiviert. Dieses überwacht die Internetverbindung und
-       kündigt einen verfügbaren Internetzugang als HNA an sobald er erkannt wurde. **Wenn die eigene
+       kündigt einen verfügbaren Internetzugang als :term:`HNA` an sobald er erkannt wurde. **Wenn die eigene
        Internetverbindung nur über einen Tunnel freigegeben werden soll, dann diese Option nicht wählen.**
      - nein
 

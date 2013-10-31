@@ -198,10 +198,10 @@ Für Policy Routing sind folgende Routingtabellen von Bedeutung:
    * - local
      - enthält lokale Hostrouten
    * - olsr
-     - enthält alle von OLSR empfangenen Routen mit Ausnahme der
+     - enthält alle von :term:`OLSR` empfangenen Routen mit Ausnahme der
        Defaultroute
    * - olsr-default
-     - enthält die von OLSR empfangene Defaultroute (sofern vorhanden)
+     - enthält die von :term:`OLSR` empfangene Defaultroute (sofern vorhanden)
    * - localnets
      - Enthält Routen zu direkt erreichbaren Netzwerken
    * - main

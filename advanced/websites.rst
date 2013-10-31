@@ -127,15 +127,15 @@ Als ``Externe Zone`` ist in diesem Fall ``Freifunk`` zu wählen.
 HNA
 ^^^
 
-Mit HNA (Host Network Announcement) kann auf dem Node ein verfügbarer
+Mit :term:`HNA` (Host Network Announcement) kann auf dem Node ein verfügbarer
 IP-Bereich oder auch nur eine einzelne Adresse im Netzwerk bekannt gemacht
 werden. So ist der Webserver direkt im Mesh erreichbar, muss jedoch selbst
-nicht OLSR nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)
+nicht :term:`OLSR` nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)
 
 Server direkt ins OLSR Netz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Indem der Server selbst OLSR "spricht" kann er direkt aus dem Mesh erreichbar
+Indem der Server selbst :term:`OLSR` "spricht" kann er direkt aus dem Mesh erreichbar
 sein. Siehe: OLSR im eigenen Netz (TODO)
 
 

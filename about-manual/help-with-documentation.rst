@@ -153,6 +153,21 @@ was dann so aussieht:
 
 :command:`/etc/init.d/olsrd restart`
 
+Glossar
+-------
+
+Abkürzungen wie z.B. DHCP sollten im Glossar (:file:`glossar.rst`)
+erklärt werden. Um Begriff dann auf die entsprechende Stelle im Glossar
+zu verlinken wird **:term:** verwendet, z.B.
+
+.. code-block:: rst
+
+   Foo kann mit :term:`DHCP` konfiguriert werden
+
+Das sieht im Text dann so aus:
+
+Foo kann mit :term:`DHCP` konfiguriert werden
+
 
 Weiterführende Links zu Sphinx und rst
 ======================================

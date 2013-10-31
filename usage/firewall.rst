@@ -53,11 +53,11 @@ Das heisst:
   von Paketen in beliebige Zonen
 * Die Freifunk-Zone erlaubt keinen eingehenden Verkehr, jedoch werden einige
   Ports die für den betrieb des Knotens sind einzeln erlaubt (SSH, Weboberfläche,
-  DHCP, OLSR-Pakete usw.). Traffic darf in die Zonen WAN und LAN. jedoch nicht in
+  :term:`DHCP`, OLSR-Pakete usw.). Traffic darf in die Zonen WAN und LAN. jedoch nicht in
   die Zone LAN weitergeleitet werden. Weitergeleiteter Verkehr wird in der Regeln
-  nicht genatted. Hier gibt es jedoch eine Ausnahme: Wird für DHCP-Clients ein
-  IP-Netzwerk benutzt, das vom lokalen Node nicht als HNA angekündigt wird, dann
-  werden Pakete aus diesem DHCP-Netzwerk genatted.
+  nicht genatted. Hier gibt es jedoch eine Ausnahme: Wird für :term:`DHCP`-Clients ein
+  IP-Netzwerk benutzt, das vom lokalen Node nicht als :term:`HNA` angekündigt wird, dann
+  werden Pakete aus diesem :term:`DHCP`-Netzwerk genatted.
 
 Zoneneinstellungen im Webinterface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
