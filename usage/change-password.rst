@@ -1,3 +1,5 @@
+.. _change-password:
+
 Passwort ändern
 ===============
 

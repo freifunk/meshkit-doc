@@ -16,5 +16,4 @@ Inhalt:
 .. toctree::
   :maxdepth: 2
 
-  flash.rst
-  firstlogin.rst
+  flash-openwrt.rst

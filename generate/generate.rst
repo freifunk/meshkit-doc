@@ -15,6 +15,8 @@ Das Erstellen von Firmwareimages erfolgt in drei Schritten:
 .. image:: /images/meshkit/basic-settings.jpg
 
 
+.. _meshkit-step1-settings:
+
 Erklärung der einzelnen Optionen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

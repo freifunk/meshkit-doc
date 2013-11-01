@@ -90,6 +90,8 @@ Webinterface kann mit jedem Browser über die Adresse
 
 zugegriffen werden.
 
+.. _connect-ssh:
+
 Zugang per SSH
 ^^^^^^^^^^^^^^
 
