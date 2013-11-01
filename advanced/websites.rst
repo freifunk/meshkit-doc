@@ -113,29 +113,5 @@ Auf einem seperaten PC/Server
 
 Soll die Webseite von einem anderen PC bzw. Server ausgeliefert werden,
 der per Netzwerk mit dem Node verbunden ist gibt es mehrere Möglichkeiten,
-diese Inhalte im Freifunknetz verfügbar zu machen.
-
-Portforwarding
-^^^^^^^^^^^^^^
-
-Auf dem Node wird ein Portforwarding eingerichtet, das einkommende Pakete
-an den Webserver im eigenen Netzwerk weiterleitet. Siehe:
-:ref:`firewall-port-forward`
-
-Als ``Externe Zone`` ist in diesem Fall ``Freifunk`` zu wählen.
-
-HNA
-^^^
-
-Mit :term:`HNA` (Host Network Announcement) kann auf dem Node ein verfügbarer
-IP-Bereich oder auch nur eine einzelne Adresse im Netzwerk bekannt gemacht
-werden. So ist der Webserver direkt im Mesh erreichbar, muss jedoch selbst
-nicht :term:`OLSR` nutzen. Siehe HNA für Rechner im eigenen Netz (TODO)
-
-Server direkt ins OLSR Netz
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Indem der Server selbst :term:`OLSR` "spricht" kann er direkt aus dem Mesh erreichbar
-sein. Siehe: OLSR im eigenen Netz (TODO)
-
-
+diese Inhalte im Freifunknetz verfügbar zu machen, siehe dazu:
+:ref:`integrate_other_pcs`

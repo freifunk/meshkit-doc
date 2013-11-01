@@ -344,8 +344,10 @@ drei WLAN-Schnittstellen konfiguriert werden.
      - Voreinstellung aus Community Profil, siehe :ref:`community_profiles`
 
 
-LAN
-^^^
+.. _generate-expert-lan:
+
+Konfiguration von LAN im Meshkit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
 
@@ -395,8 +397,8 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
 
 .. _generate-expert-wan:
 
-WAN
-^^^
+Konfiguration von WAN im Meshkit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
 

@@ -8,4 +8,5 @@ anzupassen.
 .. toctree::
   :maxdepth: 2
 
-  advanced/offer-services
+  integrate-other-pcs.rst
+  offer-services

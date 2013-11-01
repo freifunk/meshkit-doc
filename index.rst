@@ -18,8 +18,8 @@ Dokumentation zu Meshkit
   get/integration-into-networks.rst
   generate/index.rst
   flash/index.rst
-  usage/index
-  advanced
+  usage/index.rst
+  advanced/index.rst
   communities/index.rst
   about-manual/index.rst
   glossary.rst

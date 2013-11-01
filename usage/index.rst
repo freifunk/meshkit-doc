@@ -9,6 +9,7 @@ Benutzerhandbuch
   freifunk-basic-settings
   freifunk-contact
   install-packages
+  olsr
   firewall
   policy-routing
   scp

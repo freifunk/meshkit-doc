@@ -75,7 +75,8 @@ verbunden.
 * Ob auch Freifunknutzer den eigenen Internetzugang benutzen dürfen kann im Meshkit
   mit der Option ``Internet freigeben`` (siehe :ref:`generate-expert-wan`) konfiguriert werden.
 * Auf Rechner im LAN kann von Freifunk aus nicht direkt zugegriffen werden. Will man Dienste
-  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren (TODO: Link zur Anleitung)
+  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren,
+  siehe :ref:`integrate_other_pcs`.
 * Um vom WAN aus auf den Freifunk Router zugreifen zu können, muss die Firewall dort
   konfiguriert werden. Das kann man sich einfach machen indem man beim meshkit im ``WAN`` Tab
   Häckchen bei ``Erlaube SSH`` und ``Erlaube Web`` setzt (siehe :ref:`generate-expert-wan`)
@@ -101,7 +102,8 @@ WLAN. Auf diese Weise kann der Freifunk Router unter Umständen auch ein
 bereits vorhandenes Gerät ersetzen.
 
 * Auf Rechner im LAN kann von Freifunk aus nicht direkt zugegriffen werden. Will man Dienste
-  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren (TODO: Link zur Anleitung)
+  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren,
+  siehe :ref:`integrate_other_pcs`.
 * Rechner die am LAN angeschlossen sind können andere Adressen im Freifunknetzwerk
   direkt erreichen
 * Wenn die Hardware des Freifunkrouters das Erstellen von Virtuellen Access
@@ -141,6 +143,7 @@ hergestellt. Damit ist dann in der Regel auch der Zugriff aufs Internet vom
 Router selbst und angeschlossenen Rechnern möglich.
 
 * Auf Rechner im LAN kann von Freifunk aus nicht direkt zugegriffen werden. Will man Dienste
-  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren (TODO: Link zur Anleitung)
+  auf Rechnern im LAN verfügbar machen muss man dies auf dem Freifunkrouter konfigurieren,
+  siehe :ref:`integrate_other_pcs`
 * Rechner die am LAN angeschlossen sind können andere Adressen im Freifunknetzwerk
   direkt erreichen
