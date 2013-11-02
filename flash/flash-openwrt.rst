@@ -19,7 +19,7 @@ Klarheit. Als Faustregel kann man jedoch sagen:
 * Für **ar71xx** muss ein Image mit **sysupgrade** im Namen verwendet werden,
   wenn von einem bereits laufenden OpenWrt System aus geflasht wird.
 * Für **brcm47xx** dagegen muss hier in der Regel ein Image mit der Endung
-  .trx verwendet werden.
+  **.trx** verwendet werden.
 
 .. _flash-luci:
 

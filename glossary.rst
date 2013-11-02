@@ -39,3 +39,6 @@ Glossar
       Meshnetzwerke, das von der Meshkit Firmware benutzt wird.
       `OLSRd`_-Homepage.
 
+   TFTP
+      Trivial File Transfer Protocol. Dies wird häufig genutzt, um
+      Firmwareimages zum Router zu übertragen.

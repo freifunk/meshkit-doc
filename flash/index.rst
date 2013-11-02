@@ -16,4 +16,5 @@ Inhalt:
 .. toctree::
   :maxdepth: 2
 
+  flash-factory.rst
   flash-openwrt.rst
