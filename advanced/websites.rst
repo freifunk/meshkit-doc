@@ -66,7 +66,10 @@ machen mit:
   chmod +x /www/cgi-bin/helloworld.cgi
 
 Dieses Testscript kann nun im Browser unter
-``http://<nodeip>/cgi-bin/helloworld.cgi`` abgerufen werden.
+
+``http://<nodeip>/cgi-bin/helloworld.cgi``
+
+abgerufen werden.
 
 Das selbe Script in Lua:
 

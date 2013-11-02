@@ -84,13 +84,19 @@ für die **WAN-Zone**:
 
    config zone
            option name 'wan'         # Die Zone heisst wan
-           list network 'wan'        # Die Netzwerke wan und wan6 gehören der Zone an
-           list network 'wan6'       # Netzwerke werden definiert in :file:`/etc/config/network`
+           list network 'wan'        # Die Netzwerke wan und wan6
+                                     # gehören der Zone an
+           list network 'wan6'       # Netzwerke werden definiert in
+                                     # :file:`/etc/config/network`
            option input 'REJECT'     # Eingehenden Verkehr ablehnen
            option output 'ACCEPT'    # Ausgehenden Verkehr akzeptieren
-           option forward 'REJECT'   # Eingehenden Verkehr nicht weiterleiten
-           option masq '1'           # NAT (Masquerading) für weitergeleiteten ausgehenden Verkehr
-           option mtu_fix '1'        # MSS clamping Regeln für ausgehenden Verkehr (gegen MTU-Probleme)
+           option forward 'REJECT'   # Eingehenden Verkehr nicht
+                                     # weiterleiten
+           option masq '1'           # NAT (Masquerading) für weiter-
+                                     # geleiteten ausgehenden Verkehr
+           option mtu_fix '1'        # MSS clamping Regeln für
+                                     # ausgehenden Verkehr
+                                     # (gegen MTU-Probleme)
            option local_restrict '1' # siehe Bemerkung unten
 
 .. note::

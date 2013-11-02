@@ -13,8 +13,8 @@ verwendet.
 Für eine Erklärung der einzelnen Optionen siehe:
 http://wiki.freifunk.net/Kamikaze/Profile
 
-
-Existierende Communityprofile: http://luci.subsignal.org/trac/browser/luci/trunk/contrib/package/community-profiles/files/etc/config
+Alle Communityprofile befinden sich im
+`LuCI Repository <http://luci.subsignal.org/trac/browser/luci/trunk/contrib/package/community-profiles/files/etc/config>`_
 
 
 .. _community_profile_create:

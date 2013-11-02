@@ -45,28 +45,27 @@ Einrichtung über LuCI
 Einrichtung mithilfe der Konsole
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: sh
+Um den Webserver auf dem Node ``10.11.0.8`` Port ``80`` anzukündigen::
 
-  uci add_list olsrd.olsrd_nameservice.service="http://10.11.0.8:80|tcp|Mein Router"
+  uci add_list olsrd.olsrd_nameservice.service=\
+    "http://10.11.0.8:80|tcp|Mein Router"
   uci commit olsrd
   /etc/init.d/olsrd restart
 
-Es können auch mehrere Dienste angekündigt werden:
+Es können auch mehrere Dienste angekündigt werden::
 
-.. code-block:: sh
-
-  uci add_list olsrd.olsrd_nameservice.service="http://10.11.0.8:80|tcp|Mein Router"
-  uci add_list olsrd.olsrd_nameservice.service="ftp://10.11.0.8:21|tcp|Mein FTP Server"
+  uci add_list olsrd.olsrd_nameservice.service=\
+    "http://10.11.0.8:80|tcp|Mein Router"
+  uci add_list olsrd.olsrd_nameservice.service=\
+    "ftp://10.11.0.8:21|tcp|Mein FTP Server"
   uci commit olsrd
   /etc/init.d/olsrd restart
-
 
 .. rubric:: Erklärung des Service Strings
 
+Der Aufbau des erwarteten Strings als Option für Service ist recht einfach::
 
-Der Aufbau des erwarteten Strings als Option für Service ist recht einfach:
-
-<url>:<port>|<Protokoll (tcp oder udp)>|<Beschreibung des Dienstes>
+  <url>:<port>|<Protokoll (tcp oder udp)>|<Beschreibung des Dienstes>
 
 **Port darf nicht weggeleassen werden!**
 
