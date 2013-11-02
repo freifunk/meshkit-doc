@@ -39,11 +39,20 @@ anzeigen.
 
 Um sich im Dateisystem zu bewegen wird :command:`cd` verwendet:
 
-* :command:`cd ..` - Eine Ebene nach oben wechseln
-* :command:`cd /` - Ins Rootverzeichnis wechseln
-* :command:`cd <verzeichnis>` - Ins Verzeichnis <verzeichnis> wechseln, z.B.
-* :command:`cd /etc/config` - wechselt ins Verzeichis :file:`/etc/config`
+.. list-table::
+   :widths: 40 60
+   :header-rows: 1
 
+   * - Kommando
+     - Beschreibung
+   * - cd ..
+     - Eine Ebene nach oben wechseln
+   * - cd /
+     - Ins Rootverzeichnis wechseln
+   * - cd <verzeichnis>
+     - Ins Verzeichnis <verzeichnis> wechseln, z.B.
+   * - cd /etc/config
+     - wechselt ins Verzeichis :file:`/etc/config`
 
 Dateien anzeigen und editieren
 ------------------------------
@@ -61,6 +70,38 @@ oder nachinstallieren (:ref:`packages`).
 Will man eine **Datei nur anzeigen**, dann kann hierfür auch :command:`cat`
 verwendet werden, z.B. :command:`cat /etc/banner`.
 
+uci
+---
+
+Die Konfiguration von OpenWrt erfolgt in der Regel über Konfigurationsdateien
+in :file:`/etc/config`, die das ``Unified Configuration`` Format verwenden. Diese
+Dateien können direkt bearbeitet werden. Es ist aber auch möglich, :command:`uci`
+zu verwenden, um Einstellungen in diesen Files zu verändern.
+
+.. list-table::
+   :widths: 40 60
+   :header-rows: 1
+
+   * - Kommando
+     - Beschreibung
+   * - uci show
+     - zeigt alle uci Konfigurationseinstellungen
+   * - uci show freifunk
+     - zeigt alle Einträge in :file:`/etc/config/freifunk`
+   * - uci show freifunk.contact
+     - zeigt alle Einträge der Sektion ``contact`` in :file:`/etc/config/freifunk`
+   * - uci get freifunk.contact.nickname
+     - Zeigt die Option ``nickname`` aus der Section ``contact``
+       in :file:`/etc/config/freifunk`
+   * - uci set freifunk.contact.nickname='freifunker'
+     - Setzt die Option ``nickname`` aus der Section ``contact``
+       in :file:`/etc/config/freifunk` auf 'freifunker'
+   * - uci changes
+     - zeigt alle gemachten, aber noch nicht committeten Änderungen
+   * - uci commit
+     - schreibt die gemachten Änderungen in allen Konfigurationsdateien
+   * - uci --help
+     - Hilfe anzeigen
 
 Netzwerkprobleme debuggen
 -------------------------
@@ -141,4 +182,87 @@ Für IPv6 wird :command:`traceroute6` verwendet, das im Paket ``iputils-tracerou
 enthalten ist und u.U. erst noch installiert werden muss, siehe :ref:`packages`.
 
 
+iproute2
+--------
+
+:command:`ip` ist ein mächtiges Kommando zum Anzeigen und Verändern von
+IP-Konfiguration wie IP-Adressen und Routingeinträge. Es sollte dem
+älteren :command:`ifconfig` vorgezogen werden.
+
+**Allgemeines:**
+
+* durch den Parameter "-4" werden nur IPv4-Informationen angezeigt, durch
+  "-6" ur IPv6-Informationen
+* Alle Kommandos können auch in Kurzschreibweise angegeben werden, z.b.
+  :command:`ip a` statt :command:`ip addr`
+
+Wichtige Kommandos sind:
+
+.. list-table::
+   :widths: 40 60
+   :header-rows: 1
+
+   * - Kommando
+     - Beschreibung
+   * - ip addr
+     - Zeigt die Konfiguration aller Netzwerkschnittstellen an
+   * - ip -4 addr show dev eth1
+     - zeigt alle IPv4-Informationen zur Schnittstelle ``eth1`` an.
+   * - ip addr add 1.2.3.4/32 dev eth1
+     - Konfiguriert ``1.2.3.4`` mit der Netzmaske ``32`` als (weitere)
+       IP-Adresse für ``eth1``.
+   * - ip addr del 1.2.3.4/32 dev eth1
+     - löscht die oben angelegte Adresse ``1.2.3.4`` auf ``eth1`` wieder.
+   * - ip route show
+     - Zeigt alle Routen in der ``main``-Routingtabelle.
+   * - ip route show table olsr
+     - Zeigt alle Routen in der ``olsr``-Routingtabelle.
+   * - ip route add 192.168.100.0/24 via 192.168.2.1 dev eth1
+     - Fügt eine Route zum Netzwerk ``192.168.100.0/24`` in die
+       ``main``-Routingtable ein. Der Gateway für dieses Netzwerk ist
+       ``192.168.2.1`` und das Interface dafür ``eth1``.
+   * - ip route del 192.168.100.0/24 via 192.168.2.1 dev eth1
+     - Löscht die oben angelegte Route zu ``192.168.100.0/24``
+       wieder.
+   * - ip route add 192.168.100.0/24 via 192.168.2.1 dev eth1 table olsr
+     - Fügt eine Route zum Netzwerk ``192.168.100.0/24`` in die
+       ``olsr``-Routingtable ein. Der Gateway für dieses Netzwerk ist
+       ``192.168.2.1`` und das Interface dafür ``eth1``.
+   * - ip route del 192.168.100.0/24 via 192.168.2.1 dev eth1 table olsr
+     - Löscht die oben angelegte Route zu ``192.168.100.0/24``
+       wieder.
+   * - ip rule show
+     - zeigt alle Routingregeln ("ip rules") an
+   * - ip --help
+     - zeigt die Hilfe zu :command:`ip` an, das noch viel mehr kann
+       als hier gezeigt.
+
+
+ipcalc.sh
+---------
+
+Ist ein nützliches kleines Kommando auf der OpenWrt Shell. Insbesondere
+kann damit die Startadresse (``NETWORK``) sowie die Endadresse (``BROADCAST``)
+eines gegebenen Netzwerks berechnet werden. Die Netzmaske wird sowohl in
+``dotted decimal notation`` (``NETMASK``) als auch in der ``CIDR``-Schreibweise
+(``PREFIX``) auegebenen. Damit ist :command:`ipcalc.sh` auch sehr gut geeignet,
+um Netzmasken von der einen in die andere Notation umzuwandeln.
+
+Beispiel: Angabe des Netzwerks in der ``CIDR``-Notation::
+
+  root@freifunk:~# ipcalc.sh  10.11.0.1/18
+  IP=10.11.0.1
+  NETMASK=255.255.192.0
+  BROADCAST=10.11.63.255
+  NETWORK=10.11.0.0
+  PREFIX=18
+
+Beispiel: Angabe des Netzwerks in der ``Dotted Decimal``-Notation::
+
+  root@freifunk:~# ipcalc.sh  10.11.0.1 255.255.192.0
+  IP=10.11.0.1
+  NETMASK=255.255.192.0
+  BROADCAST=10.11.63.255
+  NETWORK=10.11.0.0
+  PREFIX=18
 
