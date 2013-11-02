@@ -161,9 +161,7 @@ Zusammenhang:
 Zunächst wollen wir uns für einen Überblick alle Regeln ansehen und geben
 dazu auf der Shell des Routers :command:`ip rule show` ein. Als Ausgabe
 erscheint auf einem Knoten auf dem Policyrouting für die Freifunkzone
-aktiviert wurde:
-
-.. code-block: sh
+aktiviert wurde::
 
    0:		from all lookup local
    1000:	from all lookup olsr 
