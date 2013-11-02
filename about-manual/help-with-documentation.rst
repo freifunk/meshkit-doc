@@ -168,6 +168,18 @@ Das sieht im Text dann so aus:
 
 Foo kann mit :term:`DHCP` konfiguriert werden
 
+Tabellen
+--------
+
+Um auch im PDF definierte tabellenbreiten zu haben, müssen diese in absoluten
+Werten angegeben werde. Die Gesamtbreite der Tabelle darf dabei maximal 15cm
+sein.
+
+Beispiel für eine Tabelle mit 2 Spalten::
+
+  .. tabularcolumns:: |p{6cm}|p{9cm}|
+
+Dies direkt vor der Definition der Tabelle in der .rst Datei einfügen.
 
 Weiterführende Links zu Sphinx und rst
 ======================================

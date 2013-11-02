@@ -34,6 +34,8 @@ Gibt es z.B. nur eine Ethernet-Buchse am Router dann wird durch OpenWrt vorgegeb
 Netzwerk diese Buchse angehört. In der Regel konfiguriert OpenWrt diese jedoch dann als LAN.
 Genaueres dazu findest du in der `Table of Hardware`_ im OpenWrt Wiki.
 
+.. tabularcolumns:: |p{2.5cm}|p{9.5cm}|p{3cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1

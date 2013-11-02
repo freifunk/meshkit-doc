@@ -98,6 +98,8 @@ Zum Bearbeiten mit :command:`uci`:
 
 Beschreibung der einzelnen Optionen:
 
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1
@@ -145,6 +147,8 @@ Zum Anzeigen und Verändern der Routingtabellen und -regeln wird
 :command:`ip` verwendet. Wichtige Kommandos von ip sind in diesem
 Zusammenhang:
 
+.. tabularcolumns:: |p{5cm}|p{10cm}|
+
 .. list-table::
    :widths: 40 60
    :header-rows: 1
@@ -186,6 +190,8 @@ passende Route  zu finden. Wird keine passende Route in dieser Tabelle gefunden
 dann wird mit der nächsten regel fortgefahren.
 
 Für Policy Routing sind folgende Routingtabellen von Bedeutung:
+
+.. tabularcolumns:: |p{5cm}|p{10cm}|
 
 .. list-table::
    :widths: 30 70

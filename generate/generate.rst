@@ -40,6 +40,8 @@ Schritt Profil manuell auswählen muss.
 
 ``3. Einstellungen``
 
+.. tabularcolumns:: |p{5cm}|p{10cm}|
+
 .. list-table::
    :widths: 25 75
    :header-rows: 1
@@ -82,8 +84,9 @@ Auf der Seite sind nun einige Tabs zu sehen. Diese kann man nacheinander
 durchgehen und alle Einstellungen vornehmen.
 
 .. hint::
-  Viele Felder sind schon mit sinnvollen Optionen vorbelegt. Ist man als
-  User im Meshkit eingeloggt werden auch Kontaktdaten etc. vorausgefüllt.
+
+   Viele Felder sind schon mit sinnvollen Optionen vorbelegt. Ist man als
+   User im Meshkit eingeloggt werden auch Kontaktdaten etc. vorausgefüllt.
 
 Systemeinstellungen
 ^^^^^^^^^^^^^^^^^^^
@@ -91,6 +94,8 @@ Systemeinstellungen
 Hier können allgemeine Systemeinstellungen vorgenommen werden.
 
 .. image:: /images/meshkit/settings-normal-system.png
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
 
 .. list-table::
    :widths: 25 50 25
@@ -162,6 +167,8 @@ drei WLAN-Schnittstellen konfiguriert werden.
 
 .. image:: /images/meshkit/settings-normal-wireless.png
 
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1
@@ -214,6 +221,8 @@ Systemeinstellungen
 Hier können allgemeine Systemeinstellungen vorgenommen werden.
 
 .. image:: /images/meshkit/settings-expert-system.png
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
 
 .. list-table::
    :widths: 25 50 25
@@ -304,6 +313,9 @@ drei WLAN-Schnittstellen konfiguriert werden.
 
 .. image:: /images/meshkit/settings-expert-wireless.png
 
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1
@@ -359,6 +371,8 @@ Hier kann die LAN-Schnittstelle des Routers konfiguriert werden.
   aus einem anderen Subnetz (z.B. 192.168.2.0/24) vergeben werden.
 
 .. image:: /images/meshkit/settings-expert-lan.png
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
 
 .. list-table::
    :widths: 25 50 25
@@ -420,6 +434,8 @@ Es stehen insgesamt drei Protokolle zur Auswahl:
 
 **Optionen für Protokoll dhcp**
 
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1
@@ -444,6 +460,8 @@ Es stehen insgesamt drei Protokolle zur Auswahl:
      - nein
 
 **Optionen für Protokoll static**
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
 
 .. list-table::
    :widths: 25 50 25
@@ -481,6 +499,8 @@ Es stehen insgesamt drei Protokolle zur Auswahl:
      - nein
 
 **Optionen für Protokoll olsr**
+
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
 
 .. list-table::
    :widths: 25 50 25

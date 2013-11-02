@@ -78,6 +78,8 @@ in :file:`/etc/config`, die das ``Unified Configuration`` Format verwenden. Dies
 Dateien können direkt bearbeitet werden. Es ist aber auch möglich, :command:`uci`
 zu verwenden, um Einstellungen in diesen Files zu verändern.
 
+.. tabularcolumns:: |p{6cm}|p{9cm}|
+
 .. list-table::
    :widths: 40 60
    :header-rows: 1
@@ -197,6 +199,8 @@ IP-Konfiguration wie IP-Adressen und Routingeinträge. Es sollte dem
   :command:`ip a` statt :command:`ip addr`
 
 Wichtige Kommandos sind:
+
+.. tabularcolumns:: |p{6cm}|p{9cm}| 
 
 .. list-table::
    :widths: 40 60

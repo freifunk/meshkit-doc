@@ -139,6 +139,8 @@ Dort kannst du eine neue Portweiterleitung einrichten:
 
 Gib die Daten wie oben gezeigt ein. Erklärung der einzelnen Optionen:
 
+.. tabularcolumns:: |p{2.5cm}|p{8cm}|p{4.5cm}|
+
 .. list-table::
    :widths: 25 50 25
    :header-rows: 1
