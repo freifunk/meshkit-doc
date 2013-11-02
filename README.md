@@ -13,7 +13,7 @@ It uses [Sphinx](http://sphinx-doc.org/ "Sphinx Documentation") to create the pa
 View documentation
 ------------------
 
-The documentation can be viewed on the site [Latest Meshkit Documentation](http://doc.meshkit.freifunk.net/daily/ "Meshkit documentation").
+The documentation can be viewed on the site [Meshkit Documentation](http://doc.meshkit.freifunk.net/ "Meshkit documentation").
 It is automatically rebuild daily.
 
 Contribute
