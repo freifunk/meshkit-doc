@@ -84,8 +84,39 @@ verbunden.
   Häckchen bei ``Erlaube SSH`` und ``Erlaube Web`` setzt (siehe :ref:`generate-expert-wan`)
 * Will man vom eigenen LAN aus auf das Freifunknetz zugreifen können, dann müssen entweder
   auf dem eigenen Rechner oder besser auf dem eigenen Gateway statische Routen eingetragen
-  und die Firewall auf dem Freifunk Router entsprechend konfiguriert werden (TODO) werden.
+  und die Firewall auf dem Freifunk Router entsprechend konfiguriert werden (siehe
+  :ref:`routing-wan-freifunk`) werden.
 
+.. _routing-wan-freifunk:
+
+Routing von WAN nach Freifunk ermöglichen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Folgende statische Routen sollten auf dem eigenen Router (oder notfalls auf dem eigenen
+Rechner) konfiguriert werden, das Handbuch des eigenen Routers hilft hier sicher weiter:
+
+.. list-table::
+   :widths: 25 50 25
+   :header-rows: 1
+
+   * - Netzwerk
+     - Netzmaske
+     - Beschreibung
+   * - 10.0.0.0
+     - 255.0.0.0 (/8)
+     - Freifunk Netze
+   * - 172.22.0.0
+     - 255.254.0.0 (/15)
+     - DN42
+   * - 172.31.0.0
+     - 255.255.0.0 (/16)
+     - ChaosVPN
+
+Per Default darf Traffic, der an der WAN-Schnittstelle ankommt nicht ins
+Freifunknetz geroutet werden. Damit das dennoch möglich ist, ändert man
+am einfachsten die **Einstellungen für die Firewallzone** ``wan`` und setzt dort alles
+(INPUT, FORWARD, OUTPUT) auf :guilabel:`annehmen` (ACCEPT).
+Siehe :ref:`firewall-zones`.
 
 .. _net-setup-internetgw:
 
