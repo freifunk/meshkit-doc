@@ -10,6 +10,7 @@ Benutzerhandbuch
   freifunk-basic-settings
   freifunk-contact
   install-packages
+  splash
   olsr
   firewall
   policy-routing

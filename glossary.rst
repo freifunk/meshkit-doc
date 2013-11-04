@@ -25,6 +25,10 @@ Glossar
       Host/Network Announcement. Damit werden von :term:`OLSR` stellvertretend
       einzelne Rechner oder Netzwerke im Mesh angekündigt.
 
+   MAC
+     Weltweit eindeutige Hardwareadresse von Netzwerkschnittstellen. Hat die
+     Form XX:XX:XX:XX:XX:XX.
+
    Netzmaske
       Die Netzmaske oder auch Subnetzmaske gibt die Grösse von Netzwerken an.
       Die Netzmaske kann entweder in CIDR-Notation, z.B. /24 oder in der
