@@ -33,6 +33,11 @@ Gegen einen Einsatz von Splash spricht
   zugreifen, solange der Splash nicht akzeptiert wurde indem zumindest einmal
   eine HTTP-Seite aufgerufen wird.
 
+.. warning::
+
+   Splash darf nicht andere aktive Teilnehmer/Knoten im Freifunknetz behindern.
+   Daher Splash nur auf Schnittstellen betreiben, die nur für Clients (Gäste) benutzt
+   werden.
 
 .. _splash-status:
 
