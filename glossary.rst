@@ -25,9 +25,20 @@ Glossar
       Host/Network Announcement. Damit werden von :term:`OLSR` stellvertretend
       einzelne Rechner oder Netzwerke im Mesh angekündigt.
 
+   JSON
+     JavaScript Object Notation ist ein Datenformat, das für Mensch und Computer
+     einfach lesbar sein soll. Es wird vor allem zum Austausch von Daten zwischen
+     Programmen benutzt.
+     Siehe: http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+
    MAC
      Weltweit eindeutige Hardwareadresse von Netzwerkschnittstellen. Hat die
      Form XX:XX:XX:XX:XX:XX.
+
+   MID
+     Hat ein Knoten mehrere Interfaces auf denen :term:`OLSR` läuft dann wird eine
+     davon zur primären Schnittstelle erklärt und deren IP als OLSR-Haupt-IP-Adresse
+     verwendet. Die IP-Adressen weiterer Schnittstellen werden als MID bezeichnet.
 
    Netzmaske
       Die Netzmaske oder auch Subnetzmaske gibt die Grösse von Netzwerken an.
@@ -46,3 +57,8 @@ Glossar
    TFTP
       Trivial File Transfer Protocol. Dies wird häufig genutzt, um
       Firmwareimages zum Router zu übertragen.
+
+   UCI
+      Unified Configuration Interface. Vereinheitlicht die Konfiguration
+      des OpenWrt Systems. Zur Benutzung von des :command:`uci`-Kommandos
+      auf der Kommandzeile siehe :ref:`shell-uci`.

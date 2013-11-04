@@ -12,6 +12,7 @@ Benutzerhandbuch
   install-packages
   splash
   olsr
+  olsr-status
   firewall
   policy-routing
   scp

@@ -374,7 +374,7 @@ Zudem muss `OLSR` auf dem Rechner konfiguriert und gestartet werden.
 
    Auf dem Freifunkrouter findet man auf der Seite
    :menuselection:`Freifunk --> OLSR` unter
-   :guilabel:`Konfiguration herunterladen` die auf dem Router aktive
-   OLSR Konfiguration. Diese kann sehr gut  als Ausgangsbasis für die
-   OLSR-Konfiguration auf dem Rechner verwendet werden.
+   :ref:`Konfiguration herunterladen <olsr-download-config>` die auf dem
+   Router aktive OLSR Konfiguration. Diese kann sehr gut  als Ausgangsbasis
+   für die OLSR-Konfiguration auf dem Rechner verwendet werden.
  

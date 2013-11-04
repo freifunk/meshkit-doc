@@ -70,6 +70,8 @@ oder nachinstallieren (:ref:`packages`).
 Will man eine **Datei nur anzeigen**, dann kann hierfür auch :command:`cat`
 verwendet werden, z.B. :command:`cat /etc/banner`.
 
+.. _shell-uci:
+
 uci
 ---
 
