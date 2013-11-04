@@ -62,3 +62,11 @@ Glossar
       Unified Configuration Interface. Vereinheitlicht die Konfiguration
       des OpenWrt Systems. Zur Benutzung von des :command:`uci`-Kommandos
       auf der Kommandzeile siehe :ref:`shell-uci`.
+
+   VAP
+      Virtueller Access Point. Sofern die Hardware dies unterstützt, können
+      mehrere voneinander getrennte WLAN-Netzwerke auf einer einzigen
+      WLAN-Netzwerkkarte betrieben werden. Wird unterstützt von Hardware die
+      einen der folgenden Treiber verwendet: ``ath5k``, ``ath9k``, ``madwifi``.
+      Welche Treiber ein Router benutzt findet man in den meisten Fällen über die
+      OpenWrt `Table of Hardware`_ heraus.

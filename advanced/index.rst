@@ -9,4 +9,5 @@ anzupassen.
   :maxdepth: 2
 
   integrate-other-pcs.rst
-  offer-services
+  private-wifi.rst
+  offer-services.rst

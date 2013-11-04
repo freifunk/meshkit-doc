@@ -141,7 +141,8 @@ bereits vorhandenes Gerät ersetzen.
   direkt erreichen
 * Wenn die Hardware des Freifunkrouters das Erstellen von Virtuellen Access
   Points (VAP) erlaubt, dann kann zusätzlich zum Freifunknetz ein weiteres
-  verschlüsseltes WLAN-Netz für die eigene Benutzung geöffnet werden. (TODO: Anleitung)
+  verschlüsseltes WLAN-Netz für die eigene Benutzung geöffnet werden. Siehe
+  :ref:`private-wifi`.
 
 .. hint::
    Viele Provider benutzen VOIP (SIP) zum Bereitstellen von Telefoniefunktionen.
