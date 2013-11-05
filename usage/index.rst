@@ -10,6 +10,7 @@ Benutzerhandbuch
   freifunk-basic-settings
   freifunk-contact
   install-packages
+  logs
   splash
   olsr
   olsr-status

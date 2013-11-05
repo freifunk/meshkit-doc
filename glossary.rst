@@ -12,6 +12,9 @@ Glossar
       Schnittstellen angelegt werden, sprechen wir hier auch von
       Alias-Interface.
 
+   cron
+      cron ist ein Dienst unter Linux, der periodisch zu definierten Zeiten oder
+      Intervallen Kommandos ausführen kann.
 
    DHCP
       Dynamic Host Configuration Protokoll. Dies wird benutzt, um Rechnern
@@ -62,6 +65,9 @@ Glossar
       Unified Configuration Interface. Vereinheitlicht die Konfiguration
       des OpenWrt Systems. Zur Benutzung von des :command:`uci`-Kommandos
       auf der Kommandzeile siehe :ref:`shell-uci`.
+
+   UUID
+      Universally Unique Identifier. Eine eindeutige Kennung für Geräte.
 
    VAP
       Virtueller Access Point. Sofern die Hardware dies unterstützt, können

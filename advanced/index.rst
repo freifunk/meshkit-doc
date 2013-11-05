@@ -10,4 +10,5 @@ anzupassen.
 
   integrate-other-pcs.rst
   private-wifi.rst
+  usb-disc.rst
   offer-services.rst
