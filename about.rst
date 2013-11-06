@@ -21,6 +21,25 @@ Features
 * Pakete können direkt mit ins Image gebaut werden (das spart Platz dank besserer Kopmression)
 * Eigene Dateien können mit ins Image gebaut werden
 
+Unterstützte Routermodelle
+--------------------------
+
+Prinzipiell werden alle Router unterstützt, die von der von Meshkit verwendeten
+OpenWrt-Version unterstützt werden und für die es ein ``Target`` gibt. Es werden nur
+Router mit **mindestens 32MB Ram** unterstützt. Was die **Flash-Grösse** anbeglangt so
+sind 4MB gerade noch genug, empfohlen werden aber mindestens **8MB Flash**. Informationen
+zu den einzelnen von OpenWrt unterstützten Geräten (Target, Ram, Flash etc.)
+gibt es in der OpenWrt `Table of Hardware`_.
+
+Im Moment werden von `Meshkit`_ die folgenden Targets unterstützt:
+
+* ar71xx
+* brcm47xx
+* brcm63xx
+* x86
+* x86-kvm
+
+
 Repository
 ----------
 
