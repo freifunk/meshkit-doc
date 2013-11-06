@@ -114,15 +114,34 @@ externer Medien zu kontrollieren:
    * - UUID
      - uuid
      - :term:`UUID` des Gerätes oder der Partition, die eingehängt werden soll.
+       Siehe :ref:`find-uuid-label`.
    * - Label
      - label
      - Label des Dateisystems, das eingehängt werden soll. Wird gleichzeitig eine
        :guilabel:`UUID` konfiguriert dann hat die UUID Vorrang.
+       Siehe :ref:`find-uuid-label`.
    * - Mount-Optionen
      - options
      - Spezielle Mount-Optionen, die dem :command:`mount`-Kommando mitgegeben
        werden sollen. Für mögliche Optionen siehe:
        `mount Manpage <http://linux.die.net/man/8/mount>`_.
+
+
+.. find-uuid-label:
+
+UUID und Label herausfinden
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn für einzelne Medien sichergestellt werden soll, dass sie immer an den
+selben Mountpoint gemountet werden, dann sollte das Medium vorzugsweise
+anhand seiner :term:`UUID` oder des ``Labels`` anstelle anhand des ``Device``,
+das sich verändern kann gemounted werden. Um UUID oder Label auf der Shell
+herauszufinden führt man, während das Speichermedium eingesteckt ist folgendes
+aus::
+
+  root@freifunk:~# blkid 
+  /dev/mtdblock2: TYPE="squashfs" 
+  /dev/sda1: SEC_TYPE="msdos" LABEL="liveusb" UUID="4DE7-F873" TYPE="vfat"
 
 .. _luci-fstab:
 
@@ -179,6 +198,35 @@ ALternativ können diese Einstellungen auch mit :command:`uci` gemacht werden::
 
 Für eine Erklärung der einzelnen Optionen siehe :ref:`fstab-options`.
 
+Gemountete Geräte anzeigen
+--------------------------
+
+In LuCI werden im oberen Bereich unter
+:menuselection:`Administration --> System --> Einhängepunkte`
+alle gemounteten Geräte angezeigt.
+
+.. image:: /images/luci/mount-points-show.png
+   :alt: Übersicht Mountpoints in LuCI
+
+Auf der Shell kann das :command:`mount`-Kommando verwendet werden, um diese
+Informationen anzuzeigen::
+
+  root@freifunk:~# mount
+  rootfs on / type rootfs (rw)
+  /dev/root on /rom type squashfs (ro,relatime)
+  proc on /proc type proc (rw,noatime)
+  sysfs on /sys type sysfs (rw,noatime)
+  tmpfs on /tmp type tmpfs (rw,nosuid,nodev,noatime)
+  tmpfs on /dev type tmpfs (rw,noatime,size=512k,mode=755)
+  devpts on /dev/pts type devpts (rw,noatime,mode=600)
+  /dev/mtdblock3 on /overlay type jffs2 (rw,noatime)
+  overlayfs:/overlay on / type overlayfs (rw,noatime,lowerdir=/,upperdir=/overlay)
+  debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+  none on /proc/bus/usb type usbfs (rw,relatime)
+  /dev/sda1 on /mnt/liveusb type vfat (rw,relatime,[...])
+
+In beiden Fällen wird sichtbar, dass das externe Medium :file:`/dev/sda1`
+auf den Mountpoint :file:`/mnt/liveusb` gemounted ist.
 
 Weiterführende Links
 --------------------
