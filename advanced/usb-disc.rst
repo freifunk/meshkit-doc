@@ -127,7 +127,7 @@ externer Medien zu kontrollieren:
        `mount Manpage <http://linux.die.net/man/8/mount>`_.
 
 
-.. find-uuid-label:
+.. _find-uuid-label:
 
 UUID und Label herausfinden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
