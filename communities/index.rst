@@ -4,7 +4,7 @@ Community-Support
 *****************
 
 Meshkit erlaubt es einzelnen Communities, eigene Community-Profile zu haben,
-die bestimmte Defaults vorgeben, die Meshkit dann benutzt. Ausserdem ist es
+die bestimmte Defaults vorgeben, welche Meshkit dann benutzt. Ausserdem ist es
 möglich, pro Community eigene Dateien mit ins Image zu kopieren.
 
 .. toctree::
