@@ -24,7 +24,7 @@ Liste unten gewählt ist hier schon das richtige ausgewählt.
 Fülle die Felder in den Tabs ``Standort`` und ``Kontakt`` aus.
 
 Gib im Tab ``Wireless`` eine IP-Adresse aus dem Netzwerk deiner Community
-ein. Siehe: Siehe: :ref:`IP-registrieren`.
+ein. Siehe: :ref:`IP-registrieren`.
 
 Jetzt noch das Formular absenden damit die Firmware generiert wird.
 

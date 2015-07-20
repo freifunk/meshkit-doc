@@ -10,8 +10,8 @@ Meshkit ist ein Generator für individualisierte Freifunk-Firmware-Images, die d
 nach dem Flashen einsatzbereit sind. Dazu gibt man im `Meshkit`_ ein paar Daten ein
 (IP-Adresse, Standort, Kontaktdaten). Meshkit generiert dann ein Firmwareimage (das
 Betriebsystem des Freifunk Routers) mit diesen Einstellungen. Dieses Image kann
-dann auf einen kompatiblem Access Point geflasht werden um so Teil des Freifunknetzes
-zu werden.
+dann auf einen :ref:`kompatiblem Access Point <supported_models>` geflasht werden,
+um so Teil des Freifunknetzes zu werden.
 
 Features
 --------
@@ -20,6 +20,9 @@ Features
 * Erstellen vorkonfigurierter Firmwareimages, die direkt nach dem Flashen im Mesh erreichbar sind.
 * Pakete können direkt mit ins Image gebaut werden (das spart Platz dank besserer Kopmression)
 * Eigene Dateien können mit ins Image gebaut werden
+
+
+.. _supported_models:
 
 Unterstützte Routermodelle
 --------------------------
