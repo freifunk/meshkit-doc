@@ -12,7 +12,7 @@ Das Erstellen von Firmwareimages erfolgt in drei Schritten:
 
 Öffne die Meshkit_ Webseite im Browser. Du siehst nun folgendes:
 
-.. image:: /images/meshkit/basic-settings.jpg
+.. image:: /images/meshkit/basic-settings.png
 
 
 .. _meshkit-step1-settings:
